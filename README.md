@@ -34,13 +34,27 @@ As the DM, you will get the solution to the Scenario (popup at bottom right).
 
 ## NOTES: 
 - Once you click the scenario card to reveal, you cannot flip it back.
+- To facilitate narration and pre-staging the game, the DM can choose to reveal the solution:
+
+<img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/Screenshots/dm-only.png" width="700px"
+     alt="Dashboard"
+     style="float: left; margin-right: 10px;" />
+
 - There are 2 buttons for rolling Established Procedures and Other Procedures (respectively)
-- The totals and success/failure of the Dice Roll is calculated in the Game Progress box
+  - The totals and success/failure of the Dice Roll is calculated in the Game Progress box
 
 <img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/Screenshots/roll.png" width="500px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
+- Click DRAW INJECT to draw an inject card, CLEAR is self-explanatory
+
+<img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/Screenshots/inject2.png" width="250px"
+     alt="Dashboard"
+     style="float: left; margin-right: 10px;" />
+<img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/Screenshots/inject1.png" width="250px"
+     alt="Dashboard"
+     style="float: left; margin-right: 10px;" />
 
 - All cards activate the lightbox.
 
