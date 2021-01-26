@@ -1,0 +1,83 @@
+<head>
+    
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+
+<header><h1 tabindex="0" id="title">PROCEDURES</h1></header>
+<div id="output"></div>
+
+    <section class="cards">
+      <div class="cards__single">
+        <div class="cards__front">
+          BACK
+        </div>
+        <div class="cards__back" id="a">
+          WORDS
+        </div>
+      </div>
+
+      <div class="cards__single">
+        <div class="cards__front">
+          BACK
+        </div>
+        <div class="cards__back" id="b">
+          WORDS
+        </div>
+      </div>
+
+     
+      <div class="cards__single">
+        <div class="cards__front">
+          BACK
+        </div>
+        <div class="cards__back" id="c">
+          WORDS
+        </div>
+      </div>
+
+      
+      <div class="cards__single">
+        <div class="cards__front">
+          BACK
+        </div>
+        <div class="cards__back" id="d">
+          WORDS
+        </div>
+      </div>
+
+    </section>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+        function shuffle(a) {
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        var arr = [
+            "RANDOM1",
+            "RANDOM2",
+            "RANDOM3",
+            "RANDOM4",
+            "RANDOM5",
+            "RANDOM6",
+            "RANDOM7",
+            "RANDOM8",
+            "RANDOM9"
+        ]
+
+        /* note: the JavaScript that updates the div had to be near the end
+         * of the body to work (probably just after the div)
+         */
+        shuffle(arr);
+        var output = arr.slice(0, 4);
+        document.getElementById("output").innerHTML = output
+        document.getElementById("a").innerHTML = output.slice(0, 1)
+        document.getElementById("b").innerHTML = output.slice(1, 2)
+        document.getElementById("c").innerHTML = output.slice(2, 3)
+        document.getElementById("d").innerHTML = output.slice(3, 4)
+    </script>
