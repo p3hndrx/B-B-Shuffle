@@ -29,4 +29,4 @@ Consists of HTML, CSS, and JS to control basic behaviors.
 
 <img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/App/img/blackhills-logo.png"
      alt="BlackHills InfoSec"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px; width:200px;" />
