@@ -27,6 +27,6 @@ Consists of HTML, CSS, and JS to control basic behaviors.
 - [Google Fonts](https://fonts.google.com/)
 - And of course, the great folks over at [BlackHills InfoSec](https://www.blackhillsinfosec.com/) for the art assets.
 
-<img src="png"
+<img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/App/img/blackhills-logo.png"
      alt="BlackHills InfoSec"
      style="float: left; margin-right: 10px;" />
