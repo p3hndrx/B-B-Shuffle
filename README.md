@@ -36,17 +36,20 @@ As the DM, you will get the solution to the Scenario (popup at bottom right).
 - Once you click the scenario card to reveal, you cannot flip it back.
 - There are 2 buttons for rolling Established Procedures and Other Procedures (respectively)
 - The totals and success/failure of the Dice Roll is calculated in the Game Progress box
+
 <img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/Screenshots/roll.png" width="500px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
 
 - All cards activate the lightbox.
+
 <img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/Screenshots/card-display.png" width="500px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
 - Chips can be dragged onto procedure cards to denote they are deactivated for x # of turns
+
 <img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/Screenshots/chips.png" width="500px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
