@@ -6,7 +6,7 @@
 # B&B-Shuffle
 Dashboard for conducting [Backdoors and Breaches](https://www.blackhillsinfosec.com/projects/backdoorsandbreaches/) sessions over Zoom.
 
-Backdoors and Breaches is the property of [BlackHills InfoSec](https://www.blackhillsinfosec.com/), but is great for conducting incident response walkthroughs and training seminars.
+Backdoors and Breaches is the property of [BlackHills InfoSec](https://www.blackhillsinfosec.com/). It is a great tool for conducting incident response walkthroughs and training seminars.
 
 # About This Script
 This is a simple HTML page, best viewed at 1920x1080.
