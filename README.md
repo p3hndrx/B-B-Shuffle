@@ -4,9 +4,9 @@
      style="float: left; margin-right: 10px;" />
 
 # B&B-Shuffle
-Dashboard for conducting [Backdoors and Breaches](https://www.blackhillsinfosec.com/projects/backdoorsandbreaches/) sessions over Zoom.
+Dashboard for conducting [Backdoors & Breaches](https://www.blackhillsinfosec.com/projects/backdoorsandbreaches/) sessions over Zoom.
 
-Backdoors and Breaches is the property of [BlackHills InfoSec](https://www.blackhillsinfosec.com/). It is a great tool for conducting incident response walkthroughs and training seminars.
+Backdoors and Breaches is the property of [Black Hills InfoSec](https://www.blackhillsinfosec.com/). It is a great tool for conducting incident response walkthroughs and training seminars.
 
 # About This Script
 This is a simple HTML page, best viewed at 1920x1080.
@@ -75,8 +75,8 @@ As the DM, you will get the solution to the Scenario (popup at bottom right).
 - [How to Randomize (shuffle) a Javascript Array](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array) via Stackoverflow
 - [Lightbox](https://lokeshdhakar.com/projects/lightbox2/) by Lokesh Dhakar. (+[JQuery](https://jquery.com/))
 - [Google Fonts](https://fonts.google.com/)
-- And of course, the great folks over at [BlackHills InfoSec](https://www.blackhillsinfosec.com/) for the art assets.
+- And of course, the great folks over at [Black Hills InfoSec](https://www.blackhillsinfosec.com/) for the art assets.
 
 <img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/App/img/blackhills-logo.png" width="200px"
-     alt="BlackHills InfoSec"
+     alt="Black Hills InfoSec"
      style="float: left; margin-right: 10px;" />
