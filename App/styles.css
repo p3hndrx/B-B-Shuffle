@@ -291,3 +291,11 @@ width: 75px;
     left:520px;
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
 }
+
+.counter
+{
+  text-align: center;
+  font-size:50px;
+  vertical-align:middle;
+  line-height:75px;
+}
