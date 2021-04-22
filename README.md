@@ -68,6 +68,8 @@ As the DM, you will get the solution to the Scenario (popup at bottom right).
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
+## CardList
+- via Google Sheets - [Card List](https://docs.google.com/spreadsheets/d/1RNBFr4o9OPYWwR7mxdadHQwxRayylZewcphdS3K6-og/edit?usp=sharing)
 
 ## Scripts/Snippets/Tutorials Referenced
 - [Flip Cards with Javascript](https://www.ricardomoreira.io/blog/2020-06-15-flip-cards-with-javascript/) by Ricardo Moreira
