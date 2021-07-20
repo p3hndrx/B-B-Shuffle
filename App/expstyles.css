@@ -1,0 +1,149 @@
+/*EXPANSION ADD-ON STYLES */
+
+#scenarioheader
+{
+  padding: 0 0 20px 0;
+  cursor: move;
+  z-index: 10;
+  color: #fff;
+}
+
+#scenario {
+  /*width:75%;*/
+  left:100px; top:100px;
+  position: absolute;
+  z-index: 9;
+  background-image: url(img/80perc.png);
+  /*background-color: #FFF;*/
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  padding:0 0 25px 0;
+  display:none;
+}
+
+#scenario button {
+  margin:0 0 10px 0;
+}
+
+#scenario .expcards {
+ /* display: flex; */
+ /* flex-direction: column; */
+  position: relative;
+  perspective: 1000px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#scenario .expcards
+{
+background-image: url(img/bb-bw-back-img.png);
+background-repeat:no-repeat;
+background-position: center;
+
+}
+
+#scenario [class^="cards__single_"] {
+ /* display: flex; */
+ /* flex-direction: column; */
+  margin-top: 20px;
+  margin: 0 auto;
+  width:80%;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  position: relative;
+transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+}
+
+#scenario .cards__image {
+  text-align: center;
+  width: 100%;
+  border-radius: 16px;
+}
+
+#scenario [class^="cards__single_"].flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+#scenario .cards__artist,
+#scenario .cards__album {
+  color: #20263f;
+}
+
+#scenario .cards__front img {
+  margin: 0;
+  height: 250px;
+  height: 90%;
+}
+
+#scenario .cards__album {
+  font-style: italic;
+}
+
+
+#scenario .cards__front,
+#scenario .cards__back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+#scenario .cards__front {
+  height:auto;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+#scenario .cards__back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 0px;
+  color: #20263f;
+  background-color:#FFF;
+  border-radius: 16px;
+  max-height:180px;
+}
+
+
+@media (min-width: 768px) {
+ #scenario .expcards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    perspective: 1000px;
+    align-items: stretch;
+    margin: 0 auto;
+  }
+#scenario  [class^="cards__single_"] {
+    /*width: 75%;
+    max-width:380px;*/
+  }
+}
+
+.addons
+{
+  width:290px;
+}
+
+#dm_addonsolution img {
+max-width:150px;
+}
+.addonsol { 
+  max-width:300px; 
+float:left;}
