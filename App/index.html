@@ -1,0 +1,380 @@
+<head>
+<title>B&B Shuffle v1.0</title>    
+<link rel="stylesheet" href="styles.css" >
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<link href="lightbox.css" rel="stylesheet" />
+
+  </head>
+<div id="viewrec">  
+ Best viewed at 1920x1080
+</div>
+<div id="solution">
+<a onclick="solutiontoggle()"> SHOW SOLUTION (DM ONLY)</a>
+  <div id="dm_solution" style="display:none;">
+    
+  </div>
+</div>
+
+<!-- SCENARIO CARDS -->
+<header>
+<h1 tabindex="0" id="title">SCENARIO</h1></header>
+    <section class="cards">
+
+      
+
+      <div class="cards__single">
+        <div class="cards__front">
+          <img src="img/bb-back-init.png">
+        </div>
+        <div class="cards__back">
+          <div class='init' id="a"></div>
+        </div>
+      </div>
+
+      <div class="cards__single">
+        <div class="cards__front">
+          <img src="img/bb-back-pivot.png">
+        </div>
+        <div class="cards__back">
+          <div class='init' id="b"></div>
+        </div>
+      </div>
+
+     
+      <div class="cards__single">
+        <div class="cards__front">
+          <img src="img/bb-back-c2.png">
+        </div>
+        <div class="cards__back">
+          <div class='init' id="c"></div>
+        </div>
+      </div>
+
+      
+      <div class="cards__single">
+        <div class="cards__front">
+         <img src="img/bb-back-persist.png">
+        </div>
+        <div class="cards__back">
+          <div class='init' id="d">
+          WORDS
+          </div>
+        </div>
+      </div>
+
+<br>
+
+
+    </section>
+
+<!-- PROCEDURE CARDS -->
+<header>
+<center>
+  <h1 tabindex="0" id="title">PROCEDURES</h1></header>
+
+Established Procedures: <span id="button"><input type="button" onclick="roll_dice(3)" value="Roll Dice (+3)"/></span>
+    <div class="establishedprocs" id="output"></div>
+    <div style="clear:both; margin-bottom:10px;"></div>
+Other Procedures: <span id="button2"><input type="button" onclick="roll_dice(0)" value="Roll Dice"/></span>
+    <div class="otherprocs" id="remainder"></div>
+</center>
+<div style="clear:both; margin-bottom:10px;"></div>
+
+<!--INJECT BOX-->
+<div id="injectdiv">
+    <div id="injectdivheader">
+    <header>
+      <h1 tabindex="0" id="title">INJECTS</h1></header>
+    </div>
+    <div id="something"></div>
+    <input type="button" onclick="update_ins()" value="DRAW INJECT"/>
+    <input type="button" onclick="rem_ins()" value="CLEAR"/>
+    <div >
+        <div  id="e">
+            <img style="width:200px;" src="img/bb-back-inject.png">
+        </div>
+    </div>
+</div>
+
+    <!-- FLIP SCRIPT-->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- CARD SCRIPT-->
+    <script>
+        function shuffle(a) {
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        var proc = [
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-1.png' data-lightbox='procedure1'><img class='procimg' src='img/BNB_CARDS_PRO-1.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-2.png' data-lightbox='procedure2'><img class='procimg' src='img/BNB_CARDS_PRO-2.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-3.png' data-lightbox='procedure3'><img class='procimg' src='img/BNB_CARDS_PRO-3.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-4.png' data-lightbox='procedure4'><img class='procimg' src='img/BNB_CARDS_PRO-4.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-5.png' data-lightbox='procedure5'><img class='procimg' src='img/BNB_CARDS_PRO-5.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-6.png' data-lightbox='procedure6'><img class='procimg' src='img/BNB_CARDS_PRO-6.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-7.png' data-lightbox='procedure7'><img class='procimg' src='img/BNB_CARDS_PRO-7.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-8.png' data-lightbox='procedure8'><img class='procimg' src='img/BNB_CARDS_PRO-8.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-9.png' data-lightbox='procedure9'><img class='procimg' src='img/BNB_CARDS_PRO-9.png'></a></div>",
+            "<div class='proc'><a href='img/BNB_CARDS_PRO-10.png' data-lightbox='procedure10'><img class='procimg' src='img/BNB_CARDS_PRO-10.png'></a></div>"
+        ]
+
+        var init = [
+            "<a href='img/BNB_CARDS_IC-1.png' data-lightbox='initial1'><img class='scenimg' src='img/BNB_CARDS_IC-1.png'></a>",
+            "<a href='img/BNB_CARDS_IC-2.png' data-lightbox='initial2'><img class='scenimg' src='img/BNB_CARDS_IC-2.png'></a>",
+            "<a href='img/BNB_CARDS_IC-3.png' data-lightbox='initial3'><img class='scenimg' src='img/BNB_CARDS_IC-3.png'></a>",
+            "<a href='img/BNB_CARDS_IC-4.png' data-lightbox='initial4'><img class='scenimg' src='img/BNB_CARDS_IC-4.png'></a>",
+            "<a href='img/BNB_CARDS_IC-5.png' data-lightbox='initial5'><img class='scenimg' src='img/BNB_CARDS_IC-5.png'></a>",
+            "<a href='img/BNB_CARDS_IC-6.png' data-lightbox='initial6'><img class='scenimg' src='img/BNB_CARDS_IC-6.png'></a>",
+            "<a href='img/BNB_CARDS_IC-7.png' data-lightbox='initial7'><img class='scenimg' src='img/BNB_CARDS_IC-7.png'></a>",
+            "<a href='img/BNB_CARDS_IC-8.png' data-lightbox='initial8'><img class='scenimg' src='img/BNB_CARDS_IC-8.png'></a>",
+            "<a href='img/BNB_CARDS_IC-9.png' data-lightbox='initial9'><img class='scenimg' src='img/BNB_CARDS_IC-9.png'></a>",
+            "<a href='img/BNB_CARDS_IC-10.png' data-lightbox='initial10'><img class='scenimg' src='img/BNB_CARDS_IC-10.png'></a>"
+        ]
+
+        var pivot = [
+            "<a href='img/BNB_CARDS_PE-1.png' data-lightbox='pivot1'><img class='scenimg' src='img/BNB_CARDS_PE-1.png'></a>",
+            "<a href='img/BNB_CARDS_PE-2.png' data-lightbox='pivot2'><img class='scenimg' src='img/BNB_CARDS_PE-2.png'></a>",
+            "<a href='img/BNB_CARDS_PE-3.png' data-lightbox='pivot3'><img class='scenimg' src='img/BNB_CARDS_PE-3.png'></a>",
+            "<a href='img/BNB_CARDS_PE-4.png' data-lightbox='pivot4'><img class='scenimg' src='img/BNB_CARDS_PE-4.png'></a>",
+            "<a href='img/BNB_CARDS_PE-5.png' data-lightbox='pivot5'><img class='scenimg' src='img/BNB_CARDS_PE-5.png'></a>",
+            "<a href='img/BNB_CARDS_PE-6.png' data-lightbox='pivot6'><img class='scenimg' src='img/BNB_CARDS_PE-6.png'></a>",
+            "<a href='img/BNB_CARDS_PE-7.png' data-lightbox='pivot7'><img class='scenimg' src='img/BNB_CARDS_PE-7.png'></a>"
+        ]
+
+        var c2 = [
+            "<a href='img/BNB_CARDS_CE-1-27.png' data-lightbox='c21'><img class='scenimg' src='img/BNB_CARDS_CE-1-27.png'></a>",
+            "<a href='img/BNB_CARDS_CE-1-28.png' data-lightbox='c21'><img class='scenimg' src='img/BNB_CARDS_CE-1-28.png'></a>",
+            "<a href='img/BNB_CARDS_CE-2.png' data-lightbox='c22'><img class='scenimg' src='img/BNB_CARDS_CE-2.png'></a>",
+            "<a href='img/BNB_CARDS_CE-3.png' data-lightbox='c23'><img class='scenimg' src='img/BNB_CARDS_CE-3.png'></a>",
+            "<a href='img/BNB_CARDS_CE-4.png' data-lightbox='c24'><img class='scenimg' src='img/BNB_CARDS_CE-4.png'></a>",
+            "<a href='img/BNB_CARDS_CE-5.png' data-lightbox='c22'><img class='scenimg' src='img/BNB_CARDS_CE-5.png'></a>"
+        ]
+ 
+        var persist = [
+            "<a href='img/BNB_CARDS_PER-1.png' data-lightbox='persist1'><img class='scenimg' src='img/BNB_CARDS_PER-1.png'></a>",
+            "<a href='img/BNB_CARDS_PER-2.png' data-lightbox='persist2'><img class='scenimg' src='img/BNB_CARDS_PER-2.png'></a>",
+            "<a href='img/BNB_CARDS_PER-3.png' data-lightbox='persist3'><img class='scenimg' src='img/BNB_CARDS_PER-3.png'></a>",
+            "<a href='img/BNB_CARDS_PER-4.png' data-lightbox='persist4'><img class='scenimg' src='img/BNB_CARDS_PER-4.png'></a>",
+            "<a href='img/BNB_CARDS_PER-5.png' data-lightbox='persist5'><img class='scenimg' src='img/BNB_CARDS_PER-5.png'></a>",
+            "<a href='img/BNB_CARDS_PER-6.png' data-lightbox='persist6'><img class='scenimg' src='img/BNB_CARDS_PER-6.png'></a>",
+            "<a href='img/BNB_CARDS_PER-7.png' data-lightbox='persist7'><img class='scenimg' src='img/BNB_CARDS_PER-7.png'></a>",
+            "<a href='img/BNB_CARDS_PER-8.png' data-lightbox='persist8'><img class='scenimg' src='img/BNB_CARDS_PER-8.png'></a>",
+            "<a href='img/BNB_CARDS_PER-9.png' data-lightbox='persist9'><img class='scenimg' src='img/BNB_CARDS_PER-9.png'></a>"
+        ]
+
+        var ins = [
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-1.png' data-lightbox='inject1'><img src='img/BNB_CARDS_INJ-1.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-2.png' data-lightbox='inject2'><img src='img/BNB_CARDS_INJ-2.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-3.png' data-lightbox='inject3'><img src='img/BNB_CARDS_INJ-3.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-4.png' data-lightbox='inject4'><img src='img/BNB_CARDS_INJ-4.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-5.png' data-lightbox='inject5'><img src='img/BNB_CARDS_INJ-5.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-6.png' data-lightbox='inject6'><img src='img/BNB_CARDS_INJ-6.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-7.png' data-lightbox='inject7'><img src='img/BNB_CARDS_INJ-7.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-8.png' data-lightbox='inject8'><img src='img/BNB_CARDS_INJ-8.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-9.png' data-lightbox='inject9'><img src='img/BNB_CARDS_INJ-9.png'></a></div>",
+            "<div class='inject'><a href='img/BNB_CARDS_INJ-10.png' data-lightbox='inject10'><img src='img/BNB_CARDS_INJ-10.png'></a></div>"
+        ]
+
+        shuffle(proc);
+        document.getElementById("output").innerHTML = proc.slice(0, 4).join("");
+        document.getElementById("remainder").innerHTML = proc.slice(4, 10).join("");
+
+        shuffle(init);
+        var init_id = init.slice(0,1);
+        document.getElementById("a").innerHTML = init.slice(0,1);
+        document.getElementById("dm_solution").innerHTML += init.slice(0,1);
+
+        shuffle(pivot);
+        var pivot_id = pivot.slice(0,1);
+        document.getElementById("b").innerHTML = pivot.slice(0,1);
+        document.getElementById("dm_solution").innerHTML += pivot.slice(0,1);
+
+        shuffle(c2);
+        var c2_id = c2.slice(0,1);
+        document.getElementById("c").innerHTML = c2.slice(0,1);
+        document.getElementById("dm_solution").innerHTML += c2.slice(0,1);
+
+        shuffle(persist);
+        var persist_id = persist.slice(0,1);
+        document.getElementById("d").innerHTML = persist.slice(0,1);
+        document.getElementById("dm_solution").innerHTML += persist.slice(0,1);
+
+
+        shuffle(ins);
+        
+        s = 0
+        t = 1
+        function update_ins() {
+              document.getElementById("e").innerHTML = ins.slice(s,t);
+            s++
+            t++
+            if (t==ins.length+1)
+              {s = 0; t = 1;}
+        }
+
+    </script>
+
+<!-- INSERT RESET BUTTON -->
+    <script>
+      function rem_ins() {
+              document.getElementById("e").innerHTML = "<img style='width:200px;'' src='img/bb-back-inject.png'>";
+          
+        }
+    </script>
+
+<hr>
+
+<!-- Game Progress Box -->
+<div id="mydiv">
+  <div id="mydivheader">
+    <header>
+    <h1 tabindex="0" >GAME PROGRESS</h1></header></div>
+    <div class="dice" id="dice_box">
+        <div id="dice">ROLL TO START</div>
+        <div id="message"></div>
+        <div id="fails"></div>
+    </div>
+    <hr>
+    <div class="turn">ROLL#:
+        <div id="turn">0</div>
+        <div id="turn_message"></div>
+      </div>
+
+      <div id="endgame"></div>
+</div>
+<!-- COUNTERS -->
+<div id="counter1" class="counter">1</div>
+<div id="counter2" class="counter">2</div>
+<div id="counter3" class="counter">3</div>
+
+
+<!-- ATTRIBUTION -->
+ <div id="copyright">
+      <a href="https://www.blackhillsinfosec.com/projects/backdoorsandbreaches"><div id="bb"></div></a>
+      <a href="https://www.blackhillsinfosec.com/"><div id="bh"></div></a>
+ </div>
+
+
+
+<script src="lightbox.js"></script>
+<script>
+      turn = 0
+      fail = 0
+      function roll_dice(m) {
+              var roll = 1 + Math.floor(Math.random()*20)
+              document.getElementById("dice").innerHTML = "ROLL VALUE: <br><div class='big_num'>" + roll + "(+" + m + ")</div>";
+              turn++
+              totroll=roll+m
+            
+              if(totroll<=10 && totroll >1)
+              {
+               document.getElementById("message").innerHTML = "<div class='fail'>FAILURE.</div>"; 
+               fail++
+               document.getElementById("fails").innerHTML = "STRIKE:" + fail;
+               if(fail==3){
+                document.getElementById("message").innerHTML = "<div class='fail'>FAILURE - INJECT!</div>"; 
+                document.getElementById("fails").innerHTML = "STRIKE:" + fail;
+               }
+              }
+              if(totroll>10 && roll!==20)
+              {
+               document.getElementById("message").innerHTML = "<div class='success'>SUCCESS.</div>";
+               fail=0 
+               document.getElementById("fails").innerHTML = "";
+              }
+              if(roll==20 || roll == 1 )
+              {
+               document.getElementById("message").innerHTML = "<div class='inject'>INJECT!.</div>"; 
+               fail=0
+               document.getElementById("fails").innerHTML = "";
+              }
+              if(turn==8) {
+                document.getElementById("turn").innerHTML = turn;
+                document.getElementById("turn_message").innerHTML = "2 Rolls Remaining!";
+              }
+              if(turn==9) {
+                document.getElementById("turn").innerHTML = turn;
+                document.getElementById("turn_message").innerHTML = "1 Roll Remaining!";
+              }
+              if(turn==10) {
+                document.getElementById("button").innerHTML = "";
+                document.getElementById("button2").innerHTML = "";
+                document.getElementById("turn").innerHTML = turn;
+                document.getElementById("turn_message").innerHTML = "0 Rolls Remaining! <br> GAME OVER! <br> <button onClick='window.location.href=window.location.href'>Refresh Page</button>";
+                document.getElementById("fails").innerHTML = "";
+                
+              }
+              else
+              {
+                document.getElementById("turn").innerHTML = turn;
+              }
+        }
+</script>
+<script>
+      // Make the DIV element draggable:
+dragElement(document.getElementById("injectdiv"));
+dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("counter1"));
+dragElement(document.getElementById("counter2"));
+dragElement(document.getElementById("counter3"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+function solutiontoggle() {
+  var x = document.getElementById("dm_solution");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+</script>
+
+   
