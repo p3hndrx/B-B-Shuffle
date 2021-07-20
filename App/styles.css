@@ -1,0 +1,356 @@
+body {
+  background: #eceee5;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {margin:30px 0 0 0;}
+
+#solution
+{
+z-index:99;
+position:fixed;
+bottom:0;
+right:0;
+background-color: #FFFFFF;
+border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  padding:10px;
+
+}
+#viewrec
+{
+z-index:99;
+position:absolute;
+top:0;
+left:0;
+background-color: #FFFFFF;
+border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  padding:10px;
+
+}
+
+#dm_solution img {
+max-width:250px;
+}
+
+#title {
+  color: #20263f;
+  font-weight: 400;
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  perspective: 1000px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.cards
+{
+background-image: url(img/bb-bw-back-img.png);
+background-repeat:no-repeat;
+background-position: center;
+
+}
+
+.cards__single {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width:80%;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  position: relative;
+transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+  ;
+}
+
+.cards__image {
+  text-align: center;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.cards__single.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.cards__artist,
+.cards__album {
+  color: #20263f;
+}
+
+.cards__front img {
+  margin: 0;
+  height: 250px;
+}
+
+.cards__album {
+  font-style: italic;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  line-height: 21px;
+}
+
+.cards__front,
+.cards__back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.cards__front {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+.cards__back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  /*top: 10px;*/
+  color: #20263f;
+  background-color:#FFF;
+  border-radius: 16px;
+}
+
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    perspective: 1000px;
+    align-items: stretch;
+  }
+  .cards__single {
+    width: 20%;
+    max-width:380px;
+  }
+}
+
+#mydiv, #injectdiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+}
+#injectdiv{
+  left:300px; top:800px;
+  display:none;
+}
+
+#gmnotes
+{
+  left:620px; top:800px;
+  position: absolute;
+  z-index: 9;
+  background-color: #ffe6a8;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  display:none;
+}
+
+#injectdiv h1 { margin:0px; }
+#mydiv h1 { margin:0px; }
+#gmnotes h1 { margin:0px; }
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#injectdivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #EEEEEE;
+  color: #fff;
+}
+
+#gmnotesheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #634e18;
+  color: #fff;
+}
+
+#gmnotes textarea { font-size:30px; background-color:#ffe6a8;}
+
+.establishedprocs
+{
+  /*background-color: #FFEE00;*/
+  background-image: url(img/bb-proc-back-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding:10px;
+  height:160px;
+}
+
+.big_num
+{
+font-size:50px;
+}
+
+.success
+{background-color: #00FF00;
+padding: 5px 0 5px 0;
+margin-bottom:5px;
+}
+.fail
+{ background-color: #FF0000; padding: 5px 0 5px 0;
+  margin-bottom:5px;
+}
+.inject
+{
+  padding: 5px 0 5px 0;
+  margin-bottom:5px;
+}
+.inject img { height:300px; }
+
+.proc
+{
+  float:left;
+  height: 150px; /* height of container */
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  margin:0px 5px 0px 5px;
+  background-color:#FFF;
+}
+
+.procimg
+{
+width:300px;
+}
+
+.otherprocs .procimg
+{
+width:250px;
+}
+.otherprocs .proc
+{
+  height:125px;
+}
+
+#dice
+{
+  background-image: url(img/d20-back.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.init {
+height:250px;
+overflow: hidden;
+}
+
+.scenimg
+{
+width:100%;
+}
+
+#copyright
+{
+
+}
+#bb
+{
+  float:right;
+  width:200px;
+  background-size: contain;
+  background-image: url(img/bb-logo-transparent.png);
+  background-repeat: no-repeat;
+  float:right;
+  height:70px;
+}
+#bh
+{ 
+  width:200px;
+  background-size: contain;
+  background-image: url(img/blackhills-logo.png);
+  background-repeat: no-repeat;
+  float:right;
+  height:70px;
+}
+#counter1, #counter2, #counter3 {
+width: 75px;
+    height: 75px;
+    position: absolute;
+  z-index: 6;
+  /*background-image: url(img/clock.png);*/
+  background-color: #AA1122;
+  background-repeat: no-repeat;
+  border: 5px dashed #000;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    top:825px;
+    left:520px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+}
+
+#hold1, #hold2, #hold3 {
+width: 75px;
+    height: 75px;
+    position: absolute;
+  z-index: 6;
+  /*background-image: url(img/clock.png);*/
+  background-color: #AA1122;
+  background-repeat: no-repeat;
+  border: 5px dashed #000;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    top:925px;
+    left:520px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+}
+.counter
+{
+  text-align: center;
+  font-size:50px;
+  vertical-align:middle;
+  line-height:75px;
+}
+.xcounter
+{
+  text-align: center;
+  font-size:50px;
+  vertical-align:middle;
+  line-height:60px;
+}
