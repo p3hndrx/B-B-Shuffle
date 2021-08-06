@@ -11,6 +11,9 @@ Backdoors & Breaches is the property of [Black Hills InfoSec](https://www.blackh
 # Version 2.0+EXPANSION Updates
 - View [Changelog](https://github.com/p3hndrx/B-B-Shuffle/blob/V2-Expansion/ChangeLog.md)
 
+# Version 2.1+EXPANSION 1.1 Updates
+- Updated [Cardlist](https://docs.google.com/spreadsheets/d/1RNBFr4o9OPYWwR7mxdadHQwxRayylZewcphdS3K6-og/edit#gid=0)
+
 # About This Script
 This is a simple HTML page, best viewed at 1920x1080.
 
