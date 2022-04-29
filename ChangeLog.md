@@ -3,6 +3,13 @@
      alt="BackDoors & Breaches"
      style="float: left; margin-right: 10px;" />
 
+# ICS/OT - VERSION 1.0
+- Added Initial Inject (Starting Condition)
+
+<img src="https://github.com/p3hndrx/B-B-Shuffle/blob/main/Screenshots/Screen%20Shot%202022-04-29%20at%2012.50.45.png?raw=true">
+
+- Added Lose a Turn
+
 # VERSION 2.0
 
 - GAME PROGRESS
