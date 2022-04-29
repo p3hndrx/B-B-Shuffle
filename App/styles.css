@@ -170,7 +170,7 @@ li {
 
 /*CONTROL BOXES*/
 
-#mydiv, #injectdiv, #dicebox {
+#mydiv, #injectdiv, #dicebox, #initinject {
   position: absolute;
   z-index: 9;
   background-color: #f1f1f1;
@@ -180,7 +180,7 @@ li {
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
 }
 #injectdiv{
-  left:300px; top:800px;
+  left:400px; top:800px;
   display:none;
   min-width: 285px;
 }
@@ -203,10 +203,21 @@ li {
   width:150px;
 }
 
+#initinject{
+  /*right:50%;*/
+  right:760px;
+  /*margin-left:200px;*/
+  top:50%;
+
+  display:none;
+  width:400px;
+}
+
 #injectdiv h1 { margin:0px; }
 #mydiv h1 { margin:0px; }
 #gmnotes h1 { margin:0px; }
 #dicebox h1 {margin:0px;}
+#initinject h1 {margin:0px;}
 
 #mydivheader {
   padding: 10px;
@@ -221,6 +232,14 @@ li {
   cursor: move;
   z-index: 10;
   background-color: #2196F3;
+  color: #fff;
+}
+
+#initinjectheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #FF0000;
   color: #fff;
 }
 
@@ -306,8 +325,12 @@ width:220px;
 }
 
 .init {
-height:250px;
+height:400px;
 overflow: hidden;
+}
+
+#injectbox .inject img {
+  height: 400px;
 }
 
 .scenimg

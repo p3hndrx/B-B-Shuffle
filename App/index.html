@@ -16,6 +16,7 @@
   <button onclick="diceboxtoggle()"> D20</button>
   <button onclick="notestoggle()"> Notes</button>
   |
+  <button onclick="initinjectstoggle() ">Starting Condition</button>
   <button onclick="injectstoggle()"> Injects</button>
   |
   <button onClick='window.location.href=window.location.href'>New Session</button>
@@ -104,6 +105,16 @@ Other Procedures:
         <div  id="e">
             <img style="width:200px;" src="img/CARD_BACK_2.0_DRAGOS_GREY.png">
         </div>
+    </div>
+</div>
+
+
+<!-- INIT INJECT -->
+<div id="initinject">
+  <div id="initinjectheader">
+    <header>
+    <h2 tabindex="0" >Starting Condition</h2></header></div>
+    <div class="init" id="injectbox">
     </div>
 </div>
 
@@ -216,15 +227,18 @@ Other Procedures:
 
         //INJECTS
         shuffle(ins);
-        
-        s = 0
-        t = 1
+
+          //set init
+        document.getElementById("injectbox").innerHTML = ins.slice(0,1);
+
+        s = 1
+        t = 2
         function update_ins() {
               document.getElementById("e").innerHTML = ins.slice(s,t);
             s++
             t++
-            if (t==ins.length+1)
-              {s = 0; t = 1;}
+            if (t==ins.length+2)
+              {s = 1; t = 2;}
         }
 
     </script>
@@ -233,7 +247,6 @@ Other Procedures:
     <script>
       function rem_ins() {
               document.getElementById("e").innerHTML = "<img style='width:200px;'' src='img/CARD_BACK_2.0_DRAGOS_GREY.png'>";
-          
         }
     </script>
 
@@ -273,14 +286,11 @@ Other Procedures:
           <span id="button3"></span>
     <div class="dice" id="dice_box">
         <div id="d20">
-
         </div>
-
     </div>
 </div>
 
 <!-- GM Notes -->
-
 <div id="gmnotes">
   <div id="gmnotesheader">
     <header>
@@ -288,7 +298,6 @@ Other Procedures:
     <hr>
     <textarea id="notes" rows="2" cols="13">((Type Here))
   </textarea>
-
       <div id="endgame"></div>
 </div>
 
@@ -451,6 +460,7 @@ Other Procedures:
 <script>
       // Make the DIV element draggable:
 dragElement(document.getElementById("injectdiv"));
+dragElement(document.getElementById("initinject"));
 dragElement(document.getElementById("mydiv"));
 dragElement(document.getElementById("dicebox"));
 dragElement(document.getElementById("gmnotes"));
@@ -533,6 +543,15 @@ function notestoggle() {
 
 function injectstoggle() {
   var x = document.getElementById("injectdiv");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function initinjectstoggle() {
+  var x = document.getElementById("initinject");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
