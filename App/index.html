@@ -13,10 +13,13 @@
 </div>
 <div id="solution">
   DM Controls/Toggles:
-  <button onclick="injectstoggle()"> Injects</button>
+  <button onclick="diceboxtoggle()"> D20</button>
   <button onclick="notestoggle()"> Notes</button>
+  |
+  <button onclick="injectstoggle()"> Injects</button>
+  |
   <button onClick='window.location.href=window.location.href'>New Session</button>
-  <button onclick="flipBack()"> Reset Cards</button>
+  <button onclick="flipBack()"> Flip Scenario Cards</button>
   <button onclick="solutiontoggle()"> Solution</button>
   <div id="dm_solution" style="display:none;">
     
@@ -211,7 +214,7 @@ Other Procedures:
         document.getElementById("d").innerHTML = persist.slice(0,1);
         document.getElementById("dm_solution").innerHTML += persist.slice(0,1);
 
-
+        //INJECTS
         shuffle(ins);
         
         s = 0
@@ -236,7 +239,7 @@ Other Procedures:
 
 <hr>
 
-<!-- Dice Box -->
+<!-- Game Progress -->
 <div id="mydiv">
   <div id="mydivheader">
     <header>
@@ -258,6 +261,21 @@ Other Procedures:
       </div>
 
       <div id="endgame"></div>
+</div>
+
+<!-- Game Progress -->
+<div id="dicebox">
+  <div id="diceboxheader">
+    <header>
+    <h1 tabindex="0" >DiceBox</h1></header></div>
+          <span id="button"><input type="button" onclick="roll_d20(0)" value="Roll D20"/></span>
+          <span id="button3"></span>
+    <div class="dice" id="dice_box">
+        <div id="d20">
+
+        </div>
+
+    </div>
 </div>
 
 <!-- GM Notes -->
@@ -297,6 +315,7 @@ Other Procedures:
 
 <script src="lightbox.js"></script>
 <script>
+  //DICE FUNCTIONS
       turn = 10
       fail = 0
       function roll_dice(m) {
@@ -327,7 +346,7 @@ Other Procedures:
                fail=0
                document.getElementById("fails").innerHTML = "";
               }
-             /*if(turn<=9) {
+              /*if(turn<=9) {
                 document.getElementById("button3").innerHTML = "<button onClick='addturn()''>Add Extra Turn</button></span>";
               }*/
               if(turn==2) {
@@ -351,6 +370,12 @@ Other Procedures:
                 document.getElementById("turn").innerHTML = turn;
               }
         }
+      function roll_d20() {
+        var roll = 1 + Math.floor(Math.random()*20)
+              document.getElementById("d20").innerHTML = "ROLL VALUE: <br><div class='big_num'>" + roll + "</div>";
+        }
+
+//TURN FUNCTIONS
       function addturn() {
         turn++;
         document.getElementById("dice").innerHTML = "";
@@ -389,6 +414,7 @@ Other Procedures:
       // Make the DIV element draggable:
 dragElement(document.getElementById("injectdiv"));
 dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("dicebox"));
 dragElement(document.getElementById("gmnotes"));
 dragElement(document.getElementById("counter1"));
 dragElement(document.getElementById("counter2"));
@@ -435,6 +461,17 @@ function dragElement(elmnt) {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
+  }
+}
+
+//TOGGLE FUNCTIONS
+
+function diceboxtoggle() {
+  var x = document.getElementById("dicebox");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }
 

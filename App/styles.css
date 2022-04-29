@@ -6,7 +6,7 @@ background-image: url(img/page-back.png);
 background-position: top center;
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: 100%;
+background-size: auto;
 }
 
 h1 {margin:30px 0 0 0;}
@@ -23,6 +23,11 @@ border-radius: 16px;
   padding:10px;
 
 }
+
+#solution button {
+  margin:0 0 10px 0;
+}
+
 #viewrec
 {
 z-index:99;
@@ -47,6 +52,9 @@ max-width:250px;
   display: block;
   text-align: center;
 }
+
+/*CARD STYLES*/
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -160,7 +168,9 @@ li {
   }
 }
 
-#mydiv, #injectdiv {
+/*CONTROL BOXES*/
+
+#mydiv, #injectdiv, #dicebox {
   position: absolute;
   z-index: 9;
   background-color: #f1f1f1;
@@ -172,6 +182,7 @@ li {
 #injectdiv{
   left:300px; top:800px;
   display:none;
+  min-width: 285px;
 }
 
 #gmnotes
@@ -186,11 +197,26 @@ li {
   display:none;
 }
 
+#dicebox{
+  right:20px;
+  display:none;
+  width:150px;
+}
+
 #injectdiv h1 { margin:0px; }
 #mydiv h1 { margin:0px; }
 #gmnotes h1 { margin:0px; }
+#dicebox h1 {margin:0px;}
 
 #mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#diceboxheader {
   padding: 10px;
   cursor: move;
   z-index: 10;
@@ -265,14 +291,14 @@ width:300px;
 
 .otherprocs .procimg
 {
-width:250px;
+width:220px;
 }
 .otherprocs .proc
 {
   height:125px;
 }
 
-#dice
+#dice, #d20
 {
   background-image: url(img/d20-back.png);
   background-size: contain;
@@ -370,3 +396,6 @@ width: 75px;
   vertical-align:middle;
   line-height:60px;
 }
+
+.lb-nav, .lb-details
+{display:none;}

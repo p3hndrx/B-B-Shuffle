@@ -74,6 +74,7 @@ As the DM, you will get the solution to the Scenario (popup at bottom right).
 
 ## CardList
 - via Google Sheets - [Card List](https://docs.google.com/spreadsheets/d/1RNBFr4o9OPYWwR7mxdadHQwxRayylZewcphdS3K6-og/edit?usp=sharing)
+- [Solution](https://docs.google.com/spreadsheets/d/1R4Za4jGgzn5LLQJia1CCZVuAVdcvOR9FQO7B7ZeBXGw/edit?usp=sharing)
 
 ## Scripts/Snippets/Tutorials Referenced
 - [Flip Cards with Javascript](https://www.ricardomoreira.io/blog/2020-06-15-flip-cards-with-javascript/) by Ricardo Moreira
