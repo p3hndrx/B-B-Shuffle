@@ -325,6 +325,11 @@ width:220px;
 }
 
 .init {
+height:250px;
+overflow: hidden;
+}
+
+.initinject {
 height:400px;
 overflow: hidden;
 }
