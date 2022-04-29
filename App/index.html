@@ -247,6 +247,7 @@ Other Procedures:
           <span id="button"><input type="button" onclick="roll_dice(0)" value="Roll Dice"/></span>
           <span id="button2"><input type="button" onclick="roll_dice(3)" value="Roll Dice (+3)"/></span>
           <span id="button3"><button onClick='addturn()'>Add Extra Turn</button></span>
+          <span id="button4"><button onClick='removeturn()'>Remove Turn</button></span>
     <div class="dice" id="dice_box">
         <div id="dice">
 
@@ -360,6 +361,7 @@ Other Procedures:
               if(turn==0) {
                 document.getElementById("button").innerHTML = "";
                 document.getElementById("button2").innerHTML = "";
+                document.getElementById("button4").innerHTML = "";
                 document.getElementById("turn").innerHTML = turn;
                 document.getElementById("turn_message").innerHTML = "<br> GAME OVER! <br> <button onClick='window.location.href=window.location.href'>Refresh Page</button>";
                 document.getElementById("fails").innerHTML = "";
@@ -399,10 +401,46 @@ Other Procedures:
               if(turn==0) {
                 document.getElementById("button").innerHTML = "";
                 document.getElementById("button2").innerHTML = "";
+                document.getElementById("button4").innerHTML = "";
                 document.getElementById("turn").innerHTML = turn;
                 document.getElementById("turn_message").innerHTML = "<br> GAME OVER! <br> <button onClick='window.location.href=window.location.href'>Refresh Page</button>";
                 document.getElementById("fails").innerHTML = "";
                 
+              }
+              else
+              {
+                document.getElementById("turn").innerHTML = turn;
+              }
+      }
+
+      function removeturn() {
+        turn--;
+        document.getElementById("dice").innerHTML = "";
+        document.getElementById("message").innerHTML = "TURN ADDED";
+        document.getElementById("fails").innerHTML = "";
+              if(turn<8) {
+                document.getElementById("turn_message").innerHTML = "";
+              }
+              if(turn==2) {
+                document.getElementById("button").innerHTML = "<input type='button' onclick='roll_dice(0)'' value='Roll Dice'/>";
+                document.getElementById("button2").innerHTML = "<input type='button' onclick='roll_dice(3)'' value='Roll Dice (+3)'/>";
+                document.getElementById("turn").innerHTML = turn;
+                document.getElementById("turn_message").innerHTML = "WARNING";
+              }
+              if(turn==1) {
+                document.getElementById("button").innerHTML = "<input type='button' onclick='roll_dice(0)'' value='Roll Dice'/>";
+                document.getElementById("button2").innerHTML = "<input type='button' onclick='roll_dice(3)'' value='Roll Dice (+3)'/>";
+                document.getElementById("turn").innerHTML = turn;
+                document.getElementById("turn_message").innerHTML = "RED ALERT";
+              }
+              if(turn==0) {
+                document.getElementById("button").innerHTML = "";
+                document.getElementById("button2").innerHTML = "";
+                document.getElementById("button4").innerHTML = "";
+                document.getElementById("turn").innerHTML = turn;
+                document.getElementById("turn_message").innerHTML = "<br> GAME OVER! <br> <button onClick='window.location.href=window.location.href'>Refresh Page</button>";
+                document.getElementById("fails").innerHTML = "";
+
               }
               else
               {
