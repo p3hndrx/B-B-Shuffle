@@ -3,10 +3,316 @@
   "revdate": "04-29-2022",
   "data": [
     {
-      "name": "",
+      "name": "Vendor Portal",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_1.png",
+      "type": "initial",
+      "id": "001"
+    },
+    {
+      "name": "Dual-Homed Device",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_2.png",
+      "type": "initial",
+      "id": "002"
+    },
+    {
+      "name": "Infected Authorized Vendor Laptop",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_3.png",
+      "type": "initial",
+      "id": "003"
+    },
+    {
+      "name": "Data Historian Compromise",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_4.png",
+      "type": "initial",
+      "id": "004"
+    },
+    {
+      "name": "IT Compromised With Shared Domain Trust",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_5.png",
+      "type": "initial",
+      "id": "005"
+    },
+    {
+      "name": "Dirty USB",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_6.png",
+      "type": "initial",
+      "id": "006"
+    },
+    {
+      "name": "Exploitable API",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_7.png",
+      "type": "initial",
+      "id": "007"
+    },
+    {
+      "name": "Insider Threat",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_8.png",
+      "type": "initial",
+      "id": "008"
+    },
+    {
+      "name": "Malicious Project Files",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_9.png",
+      "type": "pivot",
+      "id": "009"
+    },
+    {
+      "name": "EWS Issues Rogue Commands",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_10.png",
+      "type": "pivot",
+      "id": "010"
+    },
+    {
+      "name": "Modifying Read/Write Scripts",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_11.png",
+      "type": "pivot",
+      "id": "011"
+    },
+    {
+      "name": "Internal Password Spray",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_12.png",
+      "type": "pivot",
+      "id": "012"
+    },
+    {
+      "name": "Broadcast/Multicast Protocol Poisoning",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_13.png",
+      "type": "pivot",
+      "id": "013"
+    },
+    {
+      "name": "New Service Creation/Modification",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_14.png",
+      "type": "pivot",
+      "id": "014"
+    },
+    {
+      "name": "Local Privilege Escalation",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_15.png",
+      "type": "pivot",
+      "id": "015"
+    },
+    {
+      "name": "GPO Push of Scheduled Tasks",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_16.png",
+      "type": "pivot",
+      "id": "016"
+    },
+    {
+      "name": "Stolen Engineering Workstation (EWS) Account",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_17.png",
+      "type": "persist",
+      "id": "017"
+    },
+    {
+      "name": "Malicious Logon Scripts",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_18.png",
+      "type": "persist",
+      "id": "018"
+    },
+    {
+      "name": "GPO Modification",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_19.png",
+      "type": "persist",
+      "id": "019"
+    },
+    {
+      "name": "Malicious Report Macros",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_20.png",
+      "type": "persist",
+      "id": "020"
+    },
+    {
+      "name": "HMI Graphics Manipulation",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_21.png",
+      "type": "persist",
+      "id": "021"
+    },
+    {
+      "name": "Malicious Firmware",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_22.png",
+      "type": "persist",
+      "id": "022"
+    },
+    {
+      "name": "Autorun Malware",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_23.png",
+      "type": "persist",
+      "id": "023"
+    },
+    {
+      "name": "New User Added",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_24.png",
+      "type": "persist",
+      "id": "024"
+    },
+    {
+      "name": "Accessibility Features",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_25.png",
+      "type": "persist",
+      "id": "025"
+    },
+    {
+      "name": "Screenshot Exfil",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_26.png",
+      "type": "c2",
+      "id": "026"
+    },
+    {
+      "name": "Bridged System",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_27.png",
+      "type": "c2",
+      "id": "027"
+    },
+    {
+      "name": "Exfiltration Over Physical Medium",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_28.png",
+      "type": "c2",
+      "id": "028"
+    },
+    {
+      "name": "HTTP as Exfil",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_29.png",
+      "type": "c2",
+      "id": "029"
+    },
+    {
+      "name": "TCP Handshakes as Morse Code",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_30.png",
+      "type": "c2",
+      "id": "030"
+    },
+    {
+      "name": "DNS as C2",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_31.png",
+      "type": "c2",
+      "id": "031"
+    },
+    {
+      "name": "Sequence of Events (SOE) Analysis",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_32.png",
       "type": "procedure",
       "id": "032"
+    },
+    {
+      "name": "Protocol Analysis",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_33.png",
+      "type": "procedure",
+      "id": "033"
+    },
+    {
+      "name": "Crisis Management",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_34.png",
+      "type": "procedure",
+      "id": "034"
+    },
+    {
+      "name": "Site Walkthrough",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_35.png",
+      "type": "procedure",
+      "id": "035"
+    },
+    {
+      "name": "Shodan Review",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_36.png",
+      "type": "procedure",
+      "id": "036"
+    },
+    {
+      "name": "Security Information and Event Management (SIEM) Log Analysis",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_37.png",
+      "type": "procedure",
+      "id": "037"
+    },
+    {
+      "name": "Firewall Log Review",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_38.png",
+      "type": "procedure",
+      "id": "038"
+    },
+    {
+      "name": "Consequence-Driven Threat Hunting",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_39.png",
+      "type": "procedure",
+      "id": "039"
+    },
+    {
+      "name": "Employee Interviews",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_40.png",
+      "type": "procedure",
+      "id": "040"
+    },
+    {
+      "name": "User and Entity Behavior Analytics (UEBA)",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_41.png",
+      "type": "procedure",
+      "id": "041"
+    },
+    {
+      "name": "Endpoint Analysis",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_42.png",
+      "type": "procedure",
+      "id": "042"
+    },
+    {
+      "name": "Memory Analysis",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_43.png",
+      "type": "procedure",
+      "id": "043"
+    },
+    {
+      "name": "Unexpected PLC State Change",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_44.png",
+      "type": "inject",
+      "id": "044"
+    },
+    {
+      "name": "Safety Instrumented System (SIS) Tampering",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_45.png",
+      "type": "inject",
+      "id": "045"
+    },
+    {
+      "name": "Mediation",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_46.png",
+      "type": "inject",
+      "id": "046"
+    },
+    {
+      "name": "You Can't Get There From Here",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_47.png",
+      "type": "inject",
+      "id": "047"
+    },
+    {
+      "name": "Emergency Facility Shutdown",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_48.png",
+      "type": "inject",
+      "id": "048"
+    },
+    {
+      "name": "Legacy Knowledge",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_49.png",
+      "type": "inject",
+      "id": "049"
+    },
+    {
+      "name": "No High Availability (HA) System",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_50.png",
+      "type": "inject",
+      "id": "050"
+    },
+    {
+      "name": "No Shirt, No Shoes",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_51.png",
+      "type": "inject",
+      "id": "051"
+    },
+    {
+      "name": "USB Worm",
+      "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_52.png",
+      "type": "inject",
+      "id": "052"
     }
   ]
 }
