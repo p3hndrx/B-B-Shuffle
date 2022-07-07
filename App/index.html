@@ -19,17 +19,28 @@
   <button onclick="initinjectstoggle() ">Starting Condition</button>
   <button onclick="injectstoggle()"> Injects</button>
   |
-  <button onClick='window.location.href=window.location.href'>New Session</button>
-  <button onclick="flipBack()"> Flip Scenario Cards</button>
+
+
   <button onclick="solutiontoggle()"> Solution</button>
+  <button onclick="scenariotoggle()">Scenario Tools</button>
   <div id="dm_solution" style="display:none;">
-    
+      <div class="solution" id="dma"></div>
+      <div class="solution" id="dmb"></div>
+      <div class="solution" id="dmc"></div>
+      <div class="solution" id="dmd"></div>
   </div>
+   <div id="dm_scenario" style="display:none;">
+       Scenario Tools:
+        <button onClick="rando()">Random Scenario</button>
+        <button onclick="flipBack()"> Flip Scenario Cards</button>
+        <button onClick='window.location.href=window.location.href'>Refresh Page</button>
+   </div>
 </div>
+
 
 <!-- SCENARIO CARDS -->
 <header>
-<h1 tabindex="0" id="title">SCENARIO</h1></header>
+<h1 tabindex="0" class="title">SCENARIO</h1></header>
     <section class="cards">
 
       
@@ -39,7 +50,9 @@
           <img src="img/CARD_BACK_2.0_DRAGOS_RED.png">
         </div>
         <div class="cards__back">
-          <div class='init' id="a"></div>
+          <div class='init' id="a">
+          </div>
+
         </div>
       </div>
 
@@ -48,7 +61,9 @@
           <img src="img/CARD_BACK_2.0_DRAGOS_YELLOW.png">
         </div>
         <div class="cards__back">
-          <div class='init' id="b"></div>
+          <div class='init' id="b">
+
+          </div>
         </div>
       </div>
 
@@ -58,7 +73,8 @@
           <img src="img/CARD_BACK_2.0_DRAGOS_BROWN.png">
         </div>
         <div class="cards__back">
-          <div class='init' id="c"></div>
+          <div class='init' id="c">
+          </div>
         </div>
       </div>
 
@@ -69,7 +85,7 @@
         </div>
         <div class="cards__back">
           <div class='init' id="d">
-          WORDS
+
           </div>
         </div>
       </div>
@@ -82,7 +98,7 @@
 <!-- PROCEDURE CARDS -->
 <header>
 <center>
-  <h1 tabindex="0" id="title">PROCEDURES</h1></header>
+  <h1 tabindex="0" class="title">PROCEDURES</h1></header>
 
 Established Procedures: 
     <div class="establishedprocs" id="output"></div>
@@ -96,7 +112,7 @@ Other Procedures:
 <div id="injectdiv">
     <div id="injectdivheader">
     <header>
-      <h1 tabindex="0" id="title">INJECTS</h1></header>
+      <h1 tabindex="0" class="title">INJECTS</h1></header>
     </div>
     <div id="something"></div>
     <input type="button" onclick="update_ins()" value="DRAW INJECT"/>

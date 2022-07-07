@@ -72,6 +72,15 @@ function solutiontoggle() {
   }
 }
 
+function scenariotoggle() {
+  var x = document.getElementById("dm_scenario");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 function notestoggle() {
   var x = document.getElementById("gmnotes");
   if (x.style.display === "block") {

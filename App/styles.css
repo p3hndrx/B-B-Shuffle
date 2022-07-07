@@ -24,6 +24,7 @@ border-radius: 16px;
 
 }
 
+
 #solution button {
   margin:0 0 10px 0;
 }
@@ -45,7 +46,9 @@ border-radius: 16px;
 max-width:250px;
 }
 
-#title {
+.solution {max-width:250px;float:left;}
+
+.title {
   color: #20263f;
   font-weight: 400;
   font-size: 40px;
@@ -342,6 +345,8 @@ overflow: hidden;
 {
 width:100%;
 }
+
+.full{width:100%;height:100%;}
 
 #copyright
 {
