@@ -1,0 +1,29 @@
+#builder
+{
+z-index:99;
+position:fixed;
+bottom:0;
+left:0;
+background-color: #FFFF00;
+border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  padding:10px;
+  display:none;
+}
+
+#ic,#pv,#c2,#ps,#proc,#start { display:none;
+min-height:100px;
+background-color: #FF00FF;
+width:1275px;
+}
+
+#proc img {max-width:200px;float:left;max-height:275px;}
+
+#ic img, #ps img, #pv img,#c2 img   {max-width:200px;float:left;max-height:275px;}
+
+
+#start img {max-width:200px;float:left;max-height:275px;}
+
+div[id^='inj_'] { width: 200px;float:left;max-height:275px;}
+div[id^='ic_'] { width: 200px;float:left;height:275px;}
+#c2 div:hover, #ic div:hover, #ps div:hover, #pv div:hover   {background-color: #FF0000;}

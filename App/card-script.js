@@ -30,20 +30,34 @@ function rando() {
         document.getElementById("dmd").innerHTML = persist.slice(0,1);
 
         //INJECTS
-        shuffle(ins);
+        console.log("Inject Pool:");
+        console.log(ins);
+        randins = Object.assign([], ins);
+
+        shuffle(randins);
+        console.log("Randomized Pool:");
+        console.log(randins);
 
           //set init
-        document.getElementById("injectbox").innerHTML = ins.slice(0,1);
+        document.getElementById("injectbox").innerHTML = randins.slice(0,1);
+        console.log("Chosen Inject:");
+        console.log(randins.slice(0,1));
+        randins.shift();
+
+
+        console.log("Remaining Pool:");
+        console.log(randins);
 }
 
-s = 1
-t = 2
+s = 0
+t = 1
 function update_ins() {
-              document.getElementById("e").innerHTML = ins.slice(s,t);
+
+              document.getElementById("e").innerHTML = randins.slice(s,t);
             s++
             t++
-            if (t==ins.length+2)
-              {s = 1; t = 2;}
+            if (t==randins.length+1)
+              {s = 0; t = 1;}
         }
 
 function rem_ins() {
@@ -106,6 +120,7 @@ $(document).ready(function() {
             });
         });
     }
+
 });
 
 console.log(proc);
@@ -121,4 +136,5 @@ document.getElementById("a").innerHTML = "<img class='full' src='img/CARD_BACK_2
 document.getElementById("b").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_YELLOW.png'>"
 document.getElementById("c").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_BROWN.png'>"
 document.getElementById("d").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_PURPLE.png'>"
+
 
