@@ -432,3 +432,10 @@ width: 75px;
 
 .lb-nav, .lb-details
 {display:none;}
+
+.warn
+{
+padding:10px;
+margin:10px;
+background-color:#FF3333;
+}

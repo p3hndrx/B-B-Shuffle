@@ -1,5 +1,5 @@
 //TOGGLE FUNCTIONS
-
+remprocs = Object.assign([], proc);
 function customtoggle() {
   var x = document.getElementById("builder");
   if (x.style.display === "block") {
@@ -30,26 +30,30 @@ function boxtoggle(a) {
 }
 
 
+
+
 //Card Selectors
-estproc = []
-remainproc = proc
 function buildprocmenu(){
+    if (remprocs.length==0){remprocs = Object.assign([], proc);}
+    console.log("Procedure List:");
+    console.log(remprocs);
 
     //Card Selectors
     document.getElementById("proc").innerHTML = "";
-    remainproc.forEach(buildselector);
+    remprocs.forEach(buildselector);
 
     function buildselector(card, i){
         //console.log(i)
         cardtile = card
 
-
         //change style to fit box
         cardtile = cardtile.replace("'procimg'", "'procimgbuild'");
+        cardtile = cardtile.replace("<a ","<a onclick='return false;' ")
+        cardtile = cardtile.replace("data-lightbox","data")
 
         //console.log(card)
         //create containing div
-        cdv = "<div id='proc_"+i+"' onclick='chooseproc(this);'>"+cardtile+"</div>"
+        cdv = "<div id='proc_"+i+"' onclick='chooseproc(this.id, this);'>"+cardtile+"</div>"
         document.getElementById("proc").innerHTML += cdv;
     };
 }
@@ -166,6 +170,63 @@ function chooseinj(id,contents) {
 
     shuffle(randins);
     boxtoggle('start');
+
+return false;
+}
+
+chosenprocs=[]
+function chooseproc(id,contents) {
+    console.log(id);
+
+    //fix lightbox and formatting
+    card = contents.innerHTML;
+    swap = card.replace("scenimgbuild", "scenimg");
+    swap = swap.replace("return false;","")
+    swap = swap.replace("data","data-lightbox")
+    console.log(swap);
+
+    //document.getElementById("injectbox").innerHTML = swap;
+
+    console.clear();
+    idx = id.replace("proc_","")
+    console.log(idx)
+
+    console.log("Proc Pool:");
+    console.log(remprocs);
+
+    console.log("Selected Proc:");
+    console.log(remprocs[idx]);
+
+    if (chosenprocs.length <= 4)
+    {
+        console.clear();
+        console.log("Chosen Procedures:");
+        chosenprocs.push(remprocs[idx]);
+        console.log(chosenprocs);
+
+        console.log("Remaining Procedures:");
+        remprocs.splice(idx, 1);
+        console.log(remprocs);
+
+        document.getElementById("output").innerHTML = chosenprocs.join("");
+        document.getElementById("remainder").innerHTML = remprocs.join("");
+        //boxtoggle('proc');
+    }
+    if (chosenprocs.length >4)
+    {
+        console.clear();
+        console.log("Resetting Procedures")
+        remprocs = Object.assign([], proc);
+        chosenprocs=[]
+
+        console.log("Chosen Procedures:");
+        //chosenprocs.push(proc[idx]);
+        console.log(chosenprocs);
+
+        document.getElementById("output").innerHTML = chosenprocs.join("");
+        document.getElementById("remainder").innerHTML = remprocs.join("");
+    }
+    buildprocmenu();
 
 return false;
 }

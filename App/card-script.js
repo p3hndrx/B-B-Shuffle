@@ -120,7 +120,6 @@ $(document).ready(function() {
             });
         });
     }
-
 });
 
 console.log(proc);
@@ -129,6 +128,7 @@ console.log(init);
 console.log(persist);
 console.log(c2);
 console.log(pivot);
+
 
 
 //INITIAL STATE
