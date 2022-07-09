@@ -1,6 +1,7 @@
 <head>
 <title>B&B Shuffle ICS/OT v1.1</title>
 <link rel="stylesheet" href="styles.css" >
+<link rel="stylesheet" href="builder-styles.css" >
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -19,17 +20,48 @@
   <button onclick="initinjectstoggle() ">Starting Condition</button>
   <button onclick="injectstoggle()"> Injects</button>
   |
-  <button onClick='window.location.href=window.location.href'>New Session</button>
-  <button onclick="flipBack()"> Flip Scenario Cards</button>
+
+
   <button onclick="solutiontoggle()"> Solution</button>
+  <button onclick="scenariotoggle()">Scenario Tools</button>
   <div id="dm_solution" style="display:none;">
-    
+      <div class="solution" id="dma"><div class="warn">No Initial Compromise</div></div>
+      <div class="solution" id="dmb"><div class="warn">No Pivot & Escalate</div></div>
+      <div class="solution" id="dmc"><div class="warn">No C2 & Exfil</div></div>
+      <div class="solution" id="dmd"><div class="warn">No Persistence</div></div>
   </div>
+   <div id="dm_scenario" style="display:none;">
+       Scenario Tools:
+        <button onClick="rando()">Random</button>
+        <button onClick="customtoggle()">Custom</button> |
+        <button onclick="flipBack()"> Flip Scenario</button>
+        <button onClick='window.location.href=window.location.href'>Refresh Page</button>
+   </div>
+</div>
+
+//Scenario Builder Menu
+<div id="builder">
+    Scenario Builder
+    <button onclick="boxtoggle('ic');buildscenemenu('ic');">Initial Compromise</button>
+    <button onclick="boxtoggle('pv');buildscenemenu('pv');">Pivot</button>
+    <button onclick="boxtoggle('c2');buildscenemenu('c2');">C2</button>
+    <button onclick="boxtoggle('ps');buildscenemenu('ps');">Persist</button>
+    |
+    <button onclick="boxtoggle('proc');buildprocmenu();">Procedures</button>
+    <button onclick="boxtoggle('start');buildinjmenu();">Starting Cond</button>
+    |
+    <button onClick="customtoggle()">Close</button>
+    <div id="ic">Inital Compromise</div>
+    <div id="pv">Pivot</div>
+    <div id="c2">C2 & Exfil</div>
+    <div id="ps">Persist</div>
+    <div id="proc">Procedures</div>
+    <div id="start">Starting Condition</div>
 </div>
 
 <!-- SCENARIO CARDS -->
 <header>
-<h1 tabindex="0" id="title">SCENARIO</h1></header>
+<h1 tabindex="0" class="title">SCENARIO</h1></header>
     <section class="cards">
 
       
@@ -39,7 +71,9 @@
           <img src="img/CARD_BACK_2.0_DRAGOS_RED.png">
         </div>
         <div class="cards__back">
-          <div class='init' id="a"></div>
+          <div class='init' id="a">
+          </div>
+
         </div>
       </div>
 
@@ -48,7 +82,9 @@
           <img src="img/CARD_BACK_2.0_DRAGOS_YELLOW.png">
         </div>
         <div class="cards__back">
-          <div class='init' id="b"></div>
+          <div class='init' id="b">
+
+          </div>
         </div>
       </div>
 
@@ -58,7 +94,8 @@
           <img src="img/CARD_BACK_2.0_DRAGOS_BROWN.png">
         </div>
         <div class="cards__back">
-          <div class='init' id="c"></div>
+          <div class='init' id="c">
+          </div>
         </div>
       </div>
 
@@ -69,7 +106,7 @@
         </div>
         <div class="cards__back">
           <div class='init' id="d">
-          WORDS
+
           </div>
         </div>
       </div>
@@ -82,7 +119,7 @@
 <!-- PROCEDURE CARDS -->
 <header>
 <center>
-  <h1 tabindex="0" id="title">PROCEDURES</h1></header>
+  <h1 tabindex="0" class="title">PROCEDURES</h1></header>
 
 Established Procedures: 
     <div class="establishedprocs" id="output"></div>
@@ -96,7 +133,7 @@ Other Procedures:
 <div id="injectdiv">
     <div id="injectdivheader">
     <header>
-      <h1 tabindex="0" id="title">INJECTS</h1></header>
+      <h1 tabindex="0" class="title">INJECTS</h1></header>
     </div>
     <div id="something"></div>
     <input type="button" onclick="update_ins()" value="DRAW INJECT"/>
@@ -115,6 +152,7 @@ Other Procedures:
     <header>
     <h2 tabindex="0" >Starting Condition</h2></header></div>
     <div class="initinject" id="injectbox">
+        <button onClick="rando()">Random Scenario</button> <button onClick="customtoggle()">Custom Scenario</button>
     </div>
 </div>
 
@@ -201,5 +239,6 @@ Other Procedures:
   <!-- DICE SCRIPT-->
 <script type="text/javascript" src="dice-script.js"></script>
 <script type="text/javascript" src="ui-script.js"></script>
+<script type="text/javascript" src="ui-builder.js"></script>
 
    
