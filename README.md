@@ -8,14 +8,14 @@ Dashboard for conducting [Backdoors & Breaches](https://www.blackhillsinfosec.co
 
 Backdoors & Breaches is the property of [Black Hills InfoSec](https://www.blackhillsinfosec.com/). It is a great tool for conducting incident response walkthroughs and training seminars.
 
-# ICS/OT Version 1.0 Updates
-- Added Graphical Styles
-- Updated [Cardlist](https://docs.google.com/spreadsheets/d/1RNBFr4o9OPYWwR7mxdadHQwxRayylZewcphdS3K6-og/edit#gid=0)
 
 # About This Script
 This is a simple HTML page, best viewed at 1920x1080.
 
 Consists of HTML, CSS, and JS to control basic behaviors.
+
+## ChangeLog
+[Change Log](ChangeLog.md)
 
 ## Features:
 - Dice Roll
