@@ -121,22 +121,22 @@ function choose(id,contents) {
     if (id.includes("ic")) {
         document.getElementById("a").innerHTML = swap;
         document.getElementById("dma").innerHTML = swap;
-        boxtoggle('ic');
+        //boxtoggle('ic');
     }
     if (id.includes("pv")) {
         document.getElementById("b").innerHTML = swap;
         document.getElementById("dmb").innerHTML = swap;
-        boxtoggle('pv');
+        //boxtoggle('pv');
     }
     if (id.includes("c2")) {
         document.getElementById("c").innerHTML = swap;
         document.getElementById("dmc").innerHTML = swap;
-        boxtoggle('c2');
+        //boxtoggle('c2');
     }
     if (id.includes("ps")) {
         document.getElementById("d").innerHTML = swap;
         document.getElementById("dmd").innerHTML = swap;
-        boxtoggle('ps');
+        //boxtoggle('ps');
     }
 return false;
 }
@@ -169,7 +169,7 @@ function chooseinj(id,contents) {
     console.log(randins);
 
     shuffle(randins);
-    boxtoggle('start');
+    //boxtoggle('start');
 
 return false;
 }
