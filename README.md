@@ -12,7 +12,7 @@ Backdoors & Breaches is the property of [Black Hills InfoSec](https://www.blackh
 # About This Script
 This is a simple HTML page, best viewed at 1920x1080.
 
-Consists of HTML, CSS, and JS to control basic behaviors.
+Consists of HTML, [CSS](https://www.scaler.com/topics/css/), and JS to control basic behaviors.
 
 ## ChangeLog
 [Change Log](ChangeLog.md)
