@@ -430,8 +430,12 @@ width: 75px;
   line-height:60px;
 }
 
-.lb-nav, .lb-details
+.lb-nav
 {display:none;}
+
+.lb-number
+{display:none;}
+
 
 .warn
 {
