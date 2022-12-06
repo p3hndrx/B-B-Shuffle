@@ -1,24 +1,27 @@
 {
   "title": "ICS-OT-V1",
-  "revdate": "04-29-2022",
+  "revdate": "12-05-2022",
   "data": [
     {
       "name": "Vendor Portal",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_1.png",
       "type": "initial",
-      "id": "001"
+      "id": "001",
+      "details": "<a target=\"_blank\" href=\"https://www.dragos.com/blog/industry-news/preventing-initial-access-in-industrial-environments/\">https://www.dragos.com/blog/industry-news/preventing-initial-access-in-industrial-environments/</a>"
     },
     {
       "name": "Dual-Homed Device",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_2.png",
       "type": "initial",
-      "id": "002"
+      "id": "002",
+      "details": "<a target=\"_blank\" href=\"https://github.com/galkan/crowbar\">https://github.com/galkan/crowbar</a>"
     },
     {
       "name": "Infected Authorized Vendor Laptop",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_3.png",
       "type": "initial",
-      "id": "003"
+      "id": "003",
+      "details": "<a target=\"_blank\" href=\"https://www.reuters.com/article/us-nuclearpower-cyber-germany-idUSKCN0XN2OS\">https://www.reuters.com/article/us-nuclearpower-cyber-germany-idUSKCN0XN2OS</a>"
     },
     {
       "name": "Data Historian Compromise",
@@ -30,19 +33,22 @@
       "name": "IT Compromised With Shared Domain Trust",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_5.png",
       "type": "initial",
-      "id": "005"
+      "id": "005",
+      "details": "<li><a target=\"_blank\" href=\"https://news.microsoft.com/transform/hackers-hit-norsk-hydro-ransomware-company-responded-transparency\">https://news.microsoft.com/transform/hackers-hit-norsk-hydro-ransomware-company-responded-transparency</a></li><li><a target=\"_blank\" href=\"https://github.com/BloodHoundAD/BloodHound\">https://github.com/BloodHoundAD/BloodHound</a></li>"
     },
     {
       "name": "Dirty USB",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_6.png",
       "type": "initial",
-      "id": "006"
+      "id": "006",
+      "details": "<a target=\"_blank\" href=\"https://www.dragos.com/blog/industry-news/asset-visibility-maps-relationships-and-communication-pathways-in-ot-environments\">https://www.dragos.com/blog/industry-news/asset-visibility-maps-relationships-and-communication-pathways-in-ot-environments</a>"
     },
     {
       "name": "Exploitable API",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_7.png",
       "type": "initial",
-      "id": "007"
+      "id": "007",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/byt3bl33d3r/SprayingToolkit\">https://github.com/byt3bl33d3r/SprayingToolkit</a></li><li><a target=\"_blank\" href=\"https://github.com/dxa4481/truffleHog\">https://github.com/dxa4481/truffleHog</a></li>"
     },
     {
       "name": "Insider Threat",
@@ -72,25 +78,29 @@
       "name": "Internal Password Spray",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_12.png",
       "type": "pivot",
-      "id": "012"
+      "id": "012",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/dafthack/DomainPasswordSpray\">https://github.com/dafthack/DomainPasswordSpray</a></li><li><a target=\"_blank\" href=\"https://github.com/ropnop/kerbrute\">https://github.com/ropnop/kerbrute</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/webcast-attack-tactics-5-zero-to-hero-attack\">https://www.blackhillsinfosec.com/webcast-attack-tactics-5-zero-to-hero-attack</a></li>"
     },
     {
       "name": "Broadcast/Multicast Protocol Poisoning",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_13.png",
       "type": "pivot",
-      "id": "013"
+      "id": "013",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/fox-it/mitm6\">https://github.com/fox-it/mitm6</a></li><li><a target=\"_blank\" href=\"https://github.com/lgandx/Responder\">https://github.com/lgandx/Responder</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to\">https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to</a></li>"
     },
     {
       "name": "New Service Creation/Modification",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_14.png",
       "type": "pivot",
-      "id": "014"
+      "id": "014",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/SecureAuthCorp/impacket\">https://github.com/SecureAuthCorp/impacket</a></li><li><a target=\"_blank\" href=\"https://www.metasploit.com\">https://metasploit.com</a></li>"
     },
     {
       "name": "Local Privilege Escalation",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_15.png",
       "type": "pivot",
-      "id": "015"
+      "id": "015",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/slyd0g/DLLHijackTest\">https://github.com/slyd0g/DLLHijackTest</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av\">https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av</a></li>"
     },
     {
       "name": "GPO Push of Scheduled Tasks",
@@ -132,7 +142,8 @@
       "name": "Malicious Firmware",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_22.png",
       "type": "persist",
-      "id": "022"
+      "id": "022",
+      "details": "OH MY! <a href=\"https://google.com\">https://google.com</a>"
     },
     {
       "name": "Autorun Malware",
@@ -144,13 +155,15 @@
       "name": "New User Added",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_24.png",
       "type": "persist",
-      "id": "024"
+      "id": "024",
+      "details": "<li><a target=\"_blank\" href=\"https://www.metasploit.com\">https://www.metasploit.com</a></li><li><a target=\"_blank\" href=\"https://www.cobaltstrike.com\">https://www.cobaltstrike.com</a></li>"
     },
     {
       "name": "Accessibility Features",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_25.png",
       "type": "persist",
-      "id": "025"
+      "id": "025",
+      "details": "<a target=\"_blank\" href=\"https://shop.hak5.org\">https://shop.hak5.org</a>"
     },
     {
       "name": "Screenshot Exfil",
@@ -168,13 +181,15 @@
       "name": "Exfiltration Over Physical Medium",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_28.png",
       "type": "c2",
-      "id": "028"
+      "id": "028",
+      "details": "Exfiltration over physical medium.."
     },
     {
       "name": "HTTP as Exfil",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_29.png",
       "type": "c2",
-      "id": "029"
+      "id": "029",
+      "details": "<a target=\"_blank\" href=\"https://www.thec2matrix.com\">https://www.thec2matrix.com</a>"
     },
     {
       "name": "TCP Handshakes as Morse Code",
@@ -186,7 +201,8 @@
       "name": "DNS as C2",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_31.png",
       "type": "c2",
-      "id": "031"
+      "id": "031",
+      "details": "<a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/bypassing-cylance-part-2-using-dnscat2\">https://www.blackhillsinfosec.com/bypassing-cylance-part-2-using-dnscat2</a>"
     },
     {
       "name": "Sequence of Events (SOE) Analysis",
@@ -222,19 +238,22 @@
       "name": "Security Information and Event Management (SIEM) Log Analysis",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_37.png",
       "type": "procedure",
-      "id": "037"
+      "id": "037",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/philhagen/sof-elk\">https://github.com/philhagen/sof-elk</a></li><li><a target=\"_blank\" href=\"https://jpcertcc.github.io/ToolAnalysisResultSheet\">https://jpcertcc.github.io/ToolAnalysisResultSheet</a></li>"
     },
     {
       "name": "Firewall Log Review",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_38.png",
       "type": "procedure",
-      "id": "038"
+      "id": "038",
+      "details": "<a target=\"_blank\" href=\"https://github.com/philhagen/sof-elk\">https://github.com/philhagen/sof-elk</a>"
     },
     {
       "name": "Consequence-Driven Threat Hunting",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_39.png",
       "type": "procedure",
-      "id": "039"
+      "id": "039",
+      "details": "<li><a target=\"_blank\" href=\"https://www.activecountermeasures.com/free-tools\">https://www.activecountermeasures.com/free-tools</a></li><li><a target=\"_blank\" href=\"https://securityonionsolutions.com/\">https://securityonionsolutions.com/</a></li>"
     },
     {
       "name": "Employee Interviews",
@@ -246,19 +265,22 @@
       "name": "User and Entity Behavior Analytics (UEBA)",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_41.png",
       "type": "procedure",
-      "id": "041"
+      "id": "041",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/JPCERTCC/LogonTracer\">https://github.com/JPCERTCC/LogonTracer</a></li><li><a target=\"_blank\" href=\"https://openuba.org\">https://openuba.org/</a></li>"
     },
     {
       "name": "Endpoint Analysis",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_42.png",
       "type": "procedure",
-      "id": "042"
+      "id": "042",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/sans-blue-team/DeepBlueCLI\">https://github.com/sans-blue-team/DeepBlueCLI</a></li><li><a target=\"_blank\" href=\"https://www.velocidex.com\">https://www.velocidex.com</a></li><li><a target=\"_blank\" href=\"https://github.com/teamdfir/sift\">https://github.com/teamdfir/sift</a></li><li><a target=\"_blank\" href=\"https://github.com/keydet89/RegRipper3.0\">https://github.com/keydet89/RegRipper3.0</a></li>"
     },
     {
       "name": "Memory Analysis",
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_43.png",
       "type": "procedure",
-      "id": "043"
+      "id": "043",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/simsong/bulk_extractor\">https://github.com/simsong/bulk_extractor</a></li><li><a target=\"_blank\" href=\"https://volatilityfoundation.org\">https://volatilityfoundation.org</a></li><li><a target=\"_blank\" href=\"https://www.velocidex.com\">https://www.velocidex.com</a></li>"
     },
     {
       "name": "Unexpected PLC State Change",

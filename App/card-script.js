@@ -11,7 +11,7 @@ function rando() {
 
         shuffle(proc);
         document.getElementById("output").innerHTML = proc.slice(0, 4).join("");
-        document.getElementById("remainder").innerHTML = proc.slice(4, 11).join("");
+        document.getElementById("remainder").innerHTML = proc.slice(4, 12).join("");
 
         shuffle(init);
         document.getElementById("a").innerHTML = init.slice(0,1);
