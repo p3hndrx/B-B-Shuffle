@@ -3,6 +3,10 @@
      alt="BackDoors & Breaches"
      style="float: left; margin-right: 10px;" />
 
+# ICS/OT - VERSION 1.12
+- Added URI attributes for [CardDB JSON](App/carddb.json)
+- Added ToolTip URI box for selected cards
+
 # ICS/OT - VERSION 1.1
 - Split Javascripts for various functions
 - Created [CardDB JSON](App/carddb.json)

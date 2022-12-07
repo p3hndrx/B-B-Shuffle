@@ -435,7 +435,7 @@
       alwaysShowNav = (this.options.alwaysShowNavOnTouchDevices) ? true : false;
     } catch (e) {}
 
-    this.$lightbox.find('.lb-nav').show();
+    //this.$lightbox.find('.lb-nav').show();
 
     if (this.album.length > 1) {
       if (this.options.wrapAround) {
@@ -479,7 +479,7 @@
 
     if (this.album.length > 1 && this.options.showImageNumberLabel) {
       var labelText = this.imageCountLabel(this.currentImageIndex + 1, this.album.length);
-      this.$lightbox.find('.lb-number').text(labelText).fadeIn('fast');
+      //this.$lightbox.find('.lb-number').text(labelText).fadeIn('fast');
     } else {
       this.$lightbox.find('.lb-number').hide();
     }
