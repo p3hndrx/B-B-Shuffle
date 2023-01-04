@@ -78,6 +78,13 @@ var ins = []
 
 $(document).ready(function() {
 
+//GetVersion
+  $.getJSON(cardlist, function(h) {
+        $(version).append(h.title);
+        $(date).append(h.revdate);
+        });
+
+
  //BUILD LISTS
  cardtype = ["proc", "init", "pivot", "c2", "persist", "ins"];
  cardtype.forEach(buildlist);
