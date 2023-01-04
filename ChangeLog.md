@@ -3,6 +3,9 @@
      alt="BackDoors & Breaches"
      style="float: left; margin-right: 10px;" />
 
+Please note---
+this version (Engine-V1) comes preloaded with the ICS/OT carddb.json file.
+
 # ICS/OT - VERSION 1.12
 - Added URI attributes for [CardDB JSON](App/carddb.json)
 - Added ToolTip URI box for selected cards
