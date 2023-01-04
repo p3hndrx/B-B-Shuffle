@@ -30,30 +30,36 @@ function rando() {
         document.getElementById("dmd").innerHTML = persist.slice(0,1);
 
         //INJECTS
-        console.log("Inject Pool:");
-        console.log(ins);
+        //console.log("Inject Pool:");
+        //console.log(ins);
         randins = Object.assign([], ins);
 
         shuffle(randins);
-        console.log("Randomized Pool:");
+        console.log("Inject Pool (Randomized):");
         console.log(randins);
 
           //set init
-        document.getElementById("injectbox").innerHTML = randins.slice(0,1);
+        /*document.getElementById("injectbox").innerHTML = randins.slice(0,1);
         console.log("Chosen Inject:");
         console.log(randins.slice(0,1));
-        randins.shift();
+        randins.shift();*/
 
 
         console.log("Remaining Pool:");
         console.log(randins);
+
+        //CONSULTANTS
+        console.log("Consultant Pool (Randomized):");
+        shuffle(con);
+        console.log(con);
+
 }
 
 s = 0
 t = 1
 function update_ins() {
 
-              document.getElementById("e").innerHTML = randins.slice(s,t);
+    document.getElementById("e").innerHTML = randins.slice(s,t);
             s++
             t++
             if (t==randins.length+1)
@@ -64,6 +70,22 @@ function rem_ins() {
               document.getElementById("e").innerHTML = "<img style='width:200px;'' src='img/CARD_BACK_2.0_DRAGOS_GREY.png'>";
         }
 
+//CONSULTANTS
+
+u = 0
+v = 1
+function update_con() {
+    document.getElementById("f").innerHTML = con.slice(u,v);
+            u++
+            v++
+            if (v==con.length+1)
+              {u = 0; v = 1;}
+        }
+function rem_con() {
+              document.getElementById("f").innerHTML = "<img style='width:200px;'' src='img/bb-back-consultant.png'>";
+        }
+
+//PREPARE DECK
 
 var cardlist = 'carddb.json'
 
@@ -73,6 +95,8 @@ var pivot = []
 var c2 = []
 var persist = []
 var ins = []
+//CONSULTANTS
+var con = []
 
 
 
@@ -86,7 +110,7 @@ $(document).ready(function() {
 
 
  //BUILD LISTS
- cardtype = ["proc", "init", "pivot", "c2", "persist", "ins"];
+ cardtype = ["proc", "init", "pivot", "c2", "persist", "ins", "con"];
  cardtype.forEach(buildlist);
 
   function buildlist(item, i) {
@@ -110,6 +134,7 @@ $(document).ready(function() {
                      li = "<div class='"+c+"'><a href='"+x.image+"' data-lightbox='inject"+x.id+"' data-title='"+x.details+"'><img src='"+x.image+"'></a></div>"
                    }
                 ins.push(li)
+                randins = shuffle(ins)
                 }
             if (item=="init" && x.type=="initial") {
                 c="scenimg"
@@ -147,6 +172,17 @@ $(document).ready(function() {
                   }
                 persist.push(li)
                 }
+            //CONSULTANTS
+            if (item=="con" && x.type=="consultant") {
+                c="consultant"
+                if (x.details==null){
+                     li = "<div class='"+c+"'><a href='"+x.image+"' data-lightbox='inject"+x.id+"'><img src='"+x.image+"'></a></div>"
+                   } else {
+                     li = "<div class='"+c+"'><a href='"+x.image+"' data-lightbox='inject"+x.id+"' data-title='"+x.details+"'><img src='"+x.image+"'></a></div>"
+                   }
+                con.push(li)
+                shuffle(con);
+                }
 
             });
         });
@@ -159,6 +195,8 @@ console.log(init);
 console.log(persist);
 console.log(c2);
 console.log(pivot);
+//CONSULTANTS
+console.log(con);
 
 
 

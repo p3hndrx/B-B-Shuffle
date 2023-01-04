@@ -1,6 +1,7 @@
 <head>
-<title>B&B Shuffle | Engine-V1</title>
+<title>B&B Shuffle | Engine-V1-Expansion</title>
 <link rel="stylesheet" href="styles.css" >
+<link rel="stylesheet" href="expstyles.css" >
 <link rel="stylesheet" href="builder-styles.css" >
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -20,16 +21,25 @@
   |
   <button onclick="initinjectstoggle() ">Starting Condition</button>
   <button onclick="injectstoggle()"> Injects</button>
+  <button onclick="consultantstoggle()"> Consultants</button>
+  <button onclick="addonscenariotoggle()">Add-On Scenario</button>
   |
 
 
   <button onclick="solutiontoggle()"> Solution</button>
+    <button onclick="addonsolutiontoggle()">Add-On Solution</button>
   <button onclick="scenariotoggle()">Scenario Tools</button>
   <div id="dm_solution" style="display:none;">
       <div class="solution" id="dma"><div class="warn">No Initial Compromise</div></div>
       <div class="solution" id="dmb"><div class="warn">No Pivot & Escalate</div></div>
       <div class="solution" id="dmc"><div class="warn">No C2 & Exfil</div></div>
       <div class="solution" id="dmd"><div class="warn">No Persistence</div></div>
+  </div>
+    <div id="dm_addonsolution" style="display:none;">
+        <div class="addonsol" id="solIC"></div>
+        <div class="addonsol" id="solPE"></div>
+        <div class="addonsol" id="solCE"></div>
+        <div class="addonsol" id="solPER"></div>
   </div>
    <div id="dm_scenario" style="display:none;">
        Scenario Tools:
@@ -113,9 +123,30 @@
       </div>
 
 <br>
-
-
     </section>
+<div style="clear:both;"></div>
+<!--EXPANSION SCENARIO ADDONS-->
+<div id="addonscenario">
+  <div id="addonscenarioheader">
+    <header>
+      <h1 tabindex="0" id="title">ADD-ON SCENARIO</h1></header>
+    </div>
+        <button id="buttIC" onclick="addIC()"> Add Initial Compromise</button>
+        <button id="buttPE" onclick="addPE()"> Add Pivot & Escalate</button>
+        <button id="buttCE" onclick="addCE()"> Add C2 & EXFIL</button>
+        <button id="buttPER" onclick="addPER()"> Add Persist</button>
+        |
+        <button onclick="flipBackAddOn()"> Flip Add-On Cards</button>
+
+    <section class="expcards">
+        <div class="addons" id="addIC"></div>
+        <div class="addons" id="addPE"></div>
+        <div class="addons" id="addCE"></div>
+        <div class="addons" id="addPER"></div>
+    </section>
+  <br>
+</div>
+<!-- END EXPANSION ADDONS-->
 
 <!-- PROCEDURE CARDS -->
 <header>
@@ -146,6 +177,21 @@ Other Procedures:
     </div>
 </div>
 
+<!--Consultant BOX-->
+<div id="consultantdiv">
+    <div id="consultantdivheader">
+    <header>
+      <h1 tabindex="0" class="title">CONSULTANTS</h1></header>
+    </div>
+    <div id="something"></div>
+    <input type="button" onclick="update_con()" value="DRAW CONSULTANT"/>
+    <input type="button" onclick="rem_con()" value="CLEAR"/>
+    <div >
+        <div  id="f">
+            <img style="width:200px;" src="img/bb-back-consultant.png">
+        </div>
+    </div>
+</div>
 
 <!-- INIT INJECT -->
 <div id="initinject">

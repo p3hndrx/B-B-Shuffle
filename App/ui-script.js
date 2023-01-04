@@ -10,6 +10,9 @@ dragElement(document.getElementById("counter3"));
 dragElement(document.getElementById("hold1"));
 dragElement(document.getElementById("hold2"));
 dragElement(document.getElementById("hold3"));
+// Make the DIV element draggable:
+dragElement(document.getElementById("consultantdiv"));
+dragElement(document.getElementById("addonscenario"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -107,3 +110,35 @@ function initinjectstoggle() {
     x.style.display = "block";
   }
 }
+
+
+function consultantstoggle() {
+  var x = document.getElementById("consultantdiv");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+//EXPANSION TOGGLES
+
+function addonscenariotoggle() {
+  var x = document.getElementById("addonscenario");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function addonsolutiontoggle() {
+  var x = document.getElementById("dm_addonsolution");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
