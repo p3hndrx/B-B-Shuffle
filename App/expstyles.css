@@ -141,6 +141,7 @@ transition: transform 0.6s;
 .addons
 {
   width:290px;
+  margin-left:30px;
 }
 
 #dm_addonsolution {
@@ -188,3 +189,12 @@ float:left;}
 }
 
 .consultant img { height:300px; }
+
+.addonbutt {
+display:none;
+}
+
+#clearIC, #clearPE, #clearCE, #clearPER {
+display:none;
+color:red;
+}

@@ -108,6 +108,8 @@ function buildinjmenu(){
     };
 }
 
+custom = [0,0,0,0]
+
 function choose(id,contents) {
     console.log(id);
 
@@ -116,28 +118,63 @@ function choose(id,contents) {
     swap = card.replace("scenimgbuild", "scenimg");
     swap = swap.replace("return false;","")
     swap = swap.replace("data","data-lightbox")
-    console.log(swap);
+    //console.log(swap);
 
     if (id.includes("ic")) {
         document.getElementById("a").innerHTML = swap;
         document.getElementById("dma").innerHTML = swap;
         //boxtoggle('ic');
+        idx=id.replace("ic_","")
+        reminit=init.slice();
+        reminit.splice(idx, 1);
+        custom.splice(0,1,id)
+
+        //clear-add-on
+        clear_ic();
     }
     if (id.includes("pv")) {
         document.getElementById("b").innerHTML = swap;
         document.getElementById("dmb").innerHTML = swap;
         //boxtoggle('pv');
+        idx=id.replace("pv_","")
+        rempivot=pivot.slice();
+        rempivot.splice(idx, 1);
+        custom.splice(1,1,id)
+
+        //clear-add-on
+        clear_pe();
     }
     if (id.includes("c2")) {
         document.getElementById("c").innerHTML = swap;
         document.getElementById("dmc").innerHTML = swap;
         //boxtoggle('c2');
+        idx=id.replace("c2_","")
+        remc2=c2.slice();
+        remc2.splice(idx, 1);
+        custom.splice(2,1,id)
+
+        //clear-add-on
+        clear_ce();
     }
     if (id.includes("ps")) {
         document.getElementById("d").innerHTML = swap;
         document.getElementById("dmd").innerHTML = swap;
         //boxtoggle('ps');
+        idx=id.replace("ps_","")
+        rempersist=persist.slice();
+        rempersist.splice(idx, 1);
+        custom.splice(3,1,id)
+
+        //clear-add-on
+       clear_per();
     }
+    //check for add-on
+    //console.log(custom)
+    if (custom.every(e => e !== 0)){
+        checkaddon();
+    }
+
+
 return false;
 }
 
@@ -229,4 +266,48 @@ function chooseproc(id,contents) {
     buildprocmenu();
 
 return false;
+}
+
+function checkaddon(){
+    addonbuttons = document.querySelectorAll('.addonbutt').forEach(el => {
+        el.style.display = 'inline';
+        el.style.color = 'blue';
+    });
+}
+
+//clear add-ons
+function clear_ic() {
+        document.getElementById("addIC").innerHTML = ""
+        document.getElementById("solIC").innerHTML = ""
+        IC = 0
+        buttIC.style.display = "inline";
+        clearIC.style.display = "none";
+        shuffle(reminit);
+}
+
+function clear_pe() {
+        document.getElementById("addPE").innerHTML = ""
+        document.getElementById("solPE").innerHTML = ""
+        PE = 0
+        buttPE.style.display = "inline";
+        clearPE.style.display = "none";
+        shuffle(rempivot);
+}
+
+function clear_ce() {
+        document.getElementById("addCE").innerHTML = ""
+        document.getElementById("solCE").innerHTML = ""
+        CE = 0
+        buttCE.style.display = "inline";
+        clearCE.style.display = "none";
+        shuffle(remc2);
+}
+
+function clear_per() {
+        document.getElementById("addPER").innerHTML = ""
+        document.getElementById("solPER").innerHTML = ""
+        PER = 0
+        buttPER.style.display = "inline";
+        clearPER.style.display = "none";
+        shuffle(rempersist);
 }

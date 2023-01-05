@@ -29,14 +29,27 @@ function rando() {
         document.getElementById("d").innerHTML = persist.slice(0,1);
         document.getElementById("dmd").innerHTML = persist.slice(0,1);
 
+         //add remainders for add-on scenario
+        reminit=init.slice();
+        reminit.splice(0, 1);
+
+        remc2=c2.slice();
+        remc2.splice(0, 1);
+
+        rempivot=pivot.slice();
+        rempivot.splice(0, 1);
+
+        rempersist=persist.slice();
+        rempersist.splice(0, 1);
+
         //INJECTS
         //console.log("Inject Pool:");
         //console.log(ins);
         randins = Object.assign([], ins);
 
         shuffle(randins);
-        console.log("Inject Pool (Randomized):");
-        console.log(randins);
+        //console.log("Inject Pool (Randomized):");
+        //console.log(randins);
 
           //set init
         /*document.getElementById("injectbox").innerHTML = randins.slice(0,1);
@@ -45,14 +58,25 @@ function rando() {
         randins.shift();*/
 
 
-        console.log("Remaining Pool:");
-        console.log(randins);
+        //console.log("Remaining Pool:");
+        //console.log(randins);
 
         //CONSULTANTS
-        console.log("Consultant Pool (Randomized):");
+        //console.log("Consultant Pool (Randomized):");
         shuffle(con);
-        console.log(con);
+        //console.log(con);
 
+        clear_addon();
+        checkaddon();
+
+}
+
+function clear_addon() {
+
+        clear_ic();
+        clear_pe();
+        clear_ce();
+        clear_per();
 }
 
 s = 0
@@ -81,6 +105,7 @@ function update_con() {
             if (v==con.length+1)
               {u = 0; v = 1;}
         }
+
 function rem_con() {
               document.getElementById("f").innerHTML = "<img style='width:200px;'' src='img/bb-back-consultant.png'>";
         }
@@ -93,48 +118,76 @@ PER = 0
         //EXPANSION SCENARIO ADD-ONS SCRIPTS
         function addIC() {
             IC++
-              document.getElementById("addIC").innerHTML += "<div class=\"cards__single_"+IC+"\"><div class=\"cards__front\"><img src=\"img/bb-back-init.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"w"+IC+"\">"+init.slice(IC,IC+1);+"</div></div></div>"
-              document.getElementById("w"+IC).innerHTML = init.slice(IC,IC+1);
+              document.getElementById("addIC").innerHTML += "<div class=\"cards__single_"+IC+"\" id=\"ic_"+IC+"\"><div class=\"cards__front\"><img src=\"img/bb-back-init.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"w"+IC+"\">"+init.slice(IC,IC+1);+"</div></div></div>"
+              document.getElementById("w"+IC).innerHTML = reminit.slice(IC,IC+1);
               if (IC == 2) {
               buttIC.style.display = "none";
+              clearIC.style.display = "inline";
              }
-              document.getElementById("solIC").innerHTML += init.slice(IC,IC+1);
-               const addoncards = document.querySelectorAll('[class^="cards__single_"]');
-              addoncards.forEach((addon) => addon.addEventListener("click", flipCard));
+             document.getElementById("solIC").innerHTML += reminit.slice(IC,IC+1);
+             const addtrigger = document.querySelectorAll('[id^="ic_"]');
+             addtrigger.forEach((xc) =>  {
+
+             if(xc.getAttribute("state")!=="flipped")
+	            {
+                    xc.addEventListener("click", flipCard);
+                }
+             });
 
         }
         function addPE() {
             PE++
-              document.getElementById("addPE").innerHTML += "<div class=\"cards__single_"+PE+"\"><div class=\"cards__front\"><img src=\"img/bb-back-pivot.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"x"+PE+"\">"+pivot.slice(PE,PE+1);+"</div></div></div>"
-              document.getElementById("x"+PE).innerHTML = pivot.slice(PE,PE+1);
+              document.getElementById("addPE").innerHTML += "<div class=\"cards__single_"+PE+"\" id=\"pe_"+PE+"\"><div class=\"cards__front\"><img src=\"img/bb-back-pivot.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"x"+PE+"\">"+pivot.slice(PE,PE+1);+"</div></div></div>"
+              document.getElementById("x"+PE).innerHTML = rempivot.slice(PE,PE+1);
               if (PE == 2) {
               buttPE.style.display = "none";
+              clearPE.style.display = "inline";
              }
-              document.getElementById("solPE").innerHTML += pivot.slice(PE,PE+1);
-              const addoncards = document.querySelectorAll('[class^="cards__single_"]');
-              addoncards.forEach((addon) => addon.addEventListener("click", flipCard));
+              document.getElementById("solPE").innerHTML += rempivot.slice(PE,PE+1);
+              const addtrigger = document.querySelectorAll('[id^="pe_"]');
+              addtrigger.forEach((xc) =>  {
+
+             if(xc.getAttribute("state")!=="flipped")
+	            {
+                    xc.addEventListener("click", flipCard);
+                }
+             });
         }
         function addCE() {
             CE++
-              document.getElementById("addCE").innerHTML += "<div class=\"cards__single_"+CE+"\"><div class=\"cards__front\"><img src=\"img/bb-back-c2.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"y"+CE+"\">"+c2.slice(CE,CE+1);+"</div></div></div>"
-              document.getElementById("y"+CE).innerHTML = c2.slice(CE,CE+1);
+              document.getElementById("addCE").innerHTML += "<div class=\"cards__single_"+CE+"\" id=\"ce_"+CE+"\"><div class=\"cards__front\"><img src=\"img/bb-back-c2.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"y"+CE+"\">"+c2.slice(CE,CE+1);+"</div></div></div>"
+              document.getElementById("y"+CE).innerHTML = remc2.slice(CE,CE+1);
               if (CE == 2) {
               buttCE.style.display = "none";
+              clearCE.style.display = "inline";
              }
-              document.getElementById("solCE").innerHTML += c2.slice(CE,CE+1);
-              const addoncards = document.querySelectorAll('[class^="cards__single_"]');
-              addoncards.forEach((addon) => addon.addEventListener("click", flipCard));
+              document.getElementById("solCE").innerHTML += remc2.slice(CE,CE+1);
+              const addtrigger = document.querySelectorAll('[id^="ce_"]');
+              addtrigger.forEach((xc) =>  {
+
+             if(xc.getAttribute("state")!=="flipped")
+	            {
+                    xc.addEventListener("click", flipCard);
+                }
+             });
         }
         function addPER() {
             PER++
-              document.getElementById("addPER").innerHTML += "<div class=\"cards__single_"+PER+"\"><div class=\"cards__front\"><img src=\"img/bb-back-persist.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"z"+PER+"\">"+persist.slice(PER,PER+1);+"</div></div></div>"
-              document.getElementById("z"+PER).innerHTML = persist.slice(PER,PER+1);
+              document.getElementById("addPER").innerHTML += "<div class=\"cards__single_"+PER+"\" id=\"per_"+PER+"\"><div class=\"cards__front\"><img src=\"img/bb-back-persist.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"z"+PER+"\">"+persist.slice(PER,PER+1);+"</div></div></div>"
+              document.getElementById("z"+PER).innerHTML = rempersist.slice(PER,PER+1);
               if (PER == 2) {
               buttPER.style.display = "none";
+              clearPER.style.display = "inline";
              }
-              document.getElementById("solPER").innerHTML += persist.slice(PER,PER+1);
-              const addoncards = document.querySelectorAll('[class^="cards__single_"]');
-              addoncards.forEach((addon) => addon.addEventListener("click", flipCard));
+              document.getElementById("solPER").innerHTML += rempersist.slice(PER,PER+1);
+              const addtrigger = document.querySelectorAll('[id^="per_"]');
+              addtrigger.forEach((xc) =>  {
+
+             if(xc.getAttribute("state")!=="flipped")
+	            {
+                    xc.addEventListener("click", flipCard);
+                }
+             });
         }
 
 //PREPARE DECK

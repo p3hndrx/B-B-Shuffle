@@ -31,6 +31,7 @@ backs.forEach((c) =>
 //ADD-ON FLIP
 function flipBackAddOn() {
 const addonbacks = document.querySelectorAll('[class^="cards__single_"]');
+
 addonbacks.forEach((xc) =>
 {
 	if(xc.getAttribute("state")=="flipped")
@@ -38,7 +39,12 @@ addonbacks.forEach((xc) =>
 	xc.classList.toggle("flip");
 	xc.setAttribute("state", "back");
 	xc.addEventListener("click", flipCard);
- }
+   } else {
+   xc.setAttribute("state", "back");
+   xc.addEventListener("click", flipCard);
+   }
+
+
 });
 
 }

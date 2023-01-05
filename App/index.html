@@ -22,12 +22,12 @@
   <button onclick="initinjectstoggle() ">Starting Condition</button>
   <button onclick="injectstoggle()"> Injects</button>
   <button onclick="consultantstoggle()"> Consultants</button>
-  <button onclick="addonscenariotoggle()">Add-On Scenario</button>
+  <button class="addonbutt" onclick="addonscenariotoggle()">Add-On Scenario</button>
   |
 
 
   <button onclick="solutiontoggle()"> Solution</button>
-    <button onclick="addonsolutiontoggle()">Add-On Solution</button>
+  <button class="addonbutt" onclick="addonsolutiontoggle()">Add-On Solution</button>
   <button onclick="scenariotoggle()">Scenario Tools</button>
   <div id="dm_solution" style="display:none;">
       <div class="solution" id="dma"><div class="warn">No Initial Compromise</div></div>
@@ -131,10 +131,10 @@
     <header>
       <h1 tabindex="0" id="title">ADD-ON SCENARIO</h1></header>
     </div>
-        <button id="buttIC" onclick="addIC()"> Add Initial Compromise</button>
-        <button id="buttPE" onclick="addPE()"> Add Pivot & Escalate</button>
-        <button id="buttCE" onclick="addCE()"> Add C2 & EXFIL</button>
-        <button id="buttPER" onclick="addPER()"> Add Persist</button>
+        <button id="buttIC" onclick="addIC()"> Add Initial Compromise</button><button id="clearIC" onclick="clear_ic()"> Clear Initial Compromise</button>
+        <button id="buttPE" onclick="addPE()"> Add Pivot & Escalate</button><button id="clearPE" onclick="clear_pe()"> Clear P&E</button>
+        <button id="buttCE" onclick="addCE()"> Add C2 & EXFIL</button><button id="clearCE" onclick="clear_ce()"> Clear C2 & Exfil</button>
+        <button id="buttPER" onclick="addPER()"> Add Persist</button><button id="clearPER" onclick="clear_per()"> Clear Persist</button>
         |
         <button onclick="flipBackAddOn()"> Flip Add-On Cards</button>
 
