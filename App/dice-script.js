@@ -1,3 +1,6 @@
+// VERSION*/
+// B&B - Engine.DS.1.1
+//
 
   //DICE FUNCTIONS
       turn = 10

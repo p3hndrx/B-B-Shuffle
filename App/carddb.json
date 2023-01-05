@@ -1,6 +1,6 @@
 {
-  "title": "ICS-OT-V1",
-  "revdate": "12-05-2022",
+  "title": "TEST-SAMPLE-- NOT FOR PRODUCTION",
+  "revdate": "01-05-2022",
   "data": [
     {
       "name": "Vendor Portal",
@@ -335,6 +335,54 @@
       "image": "img/ICS-OTv1/BNB_CARDS_ICS_DRAGOS_52.png",
       "type": "inject",
       "id": "052"
+    },
+    {
+      "name": "TEST8",
+      "image": "img/EXPv1.1/BNB_CARDS_EXP1.1_CON-1.png",
+      "type": "consultant",
+      "id": "053"
+    },
+    {
+      "name": "TEST7",
+      "image": "img/EXPv1.1/BNB_CARDS_EXP1.1_CON-2.png",
+      "type": "consultant",
+      "id": "054"
+    },
+    {
+      "name": "TEST6",
+      "image": "img/EXPv1.1/BNB_CARDS_EXP1.1_CON-3.png",
+      "type": "consultant",
+      "id": "055"
+    },
+    {
+      "name": "TEST5",
+      "image": "img/EXPv1.1/BNB_CARDS_EXP1.1_CON-4.png",
+      "type": "consultant",
+      "id": "056"
+    },
+    {
+      "name": "TEST4",
+      "image": "img/EXPv1.1/BNB_CARDS_EXP1.1_CON-5.png",
+      "type": "consultant",
+      "id": "057"
+    },
+    {
+      "name": "TEST3",
+      "image": "img/EXPv1.1/BNB_CARDS_EXP1.1_CON-6.png",
+      "type": "consultant",
+      "id": "058"
+    },
+    {
+      "name": "TEST2",
+      "image": "img/EXPv1.1/BNB_CARDS_EXP1.1_CON-7.png",
+      "type": "consultant",
+      "id": "059"
+    },
+    {
+      "name": "TEST1",
+      "image": "img/EXPv1.1/BNB_CARDS_EXP1.1_CON-8.png",
+      "type": "consultant",
+      "id": "060"
     }
   ]
 }

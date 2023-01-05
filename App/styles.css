@@ -336,8 +336,8 @@ overflow: hidden;
 }
 
 .initinject {
-height:400px;
-overflow: hidden;
+/*height:400px;
+overflow: hidden; */
 }
 
 #injectbox .inject img {

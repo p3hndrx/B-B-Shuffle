@@ -1,3 +1,7 @@
+// VERSION*/
+// B&B - Engine.FS.1.1
+//
+
 const cards = document.querySelectorAll(".cards__single");
 
 function flipCard() {

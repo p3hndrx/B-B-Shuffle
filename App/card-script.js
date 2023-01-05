@@ -1,3 +1,7 @@
+// VERSION*/
+// B&B - Engine.CS.1.1
+//
+
 function shuffle(a) {
             for (let i = a.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -43,23 +47,7 @@ function rando() {
         rempersist.splice(0, 1);
 
         //INJECTS
-        //console.log("Inject Pool:");
-        //console.log(ins);
-        randins = Object.assign([], ins);
-
-        shuffle(randins);
-        //console.log("Inject Pool (Randomized):");
-        //console.log(randins);
-
-          //set init
-        /*document.getElementById("injectbox").innerHTML = randins.slice(0,1);
-        console.log("Chosen Inject:");
-        console.log(randins.slice(0,1));
-        randins.shift();*/
-
-
-        //console.log("Remaining Pool:");
-        //console.log(randins);
+        //conditions();
 
         //CONSULTANTS
         //console.log("Consultant Pool (Randomized):");
@@ -69,6 +57,37 @@ function rando() {
         clear_addon();
         checkaddon();
 
+}
+
+function randcondition() {
+
+        shuffle(ins);
+//INJECTS
+        //console.log("Inject Pool:");
+        //console.log(ins);
+        randins = Object.assign([], ins);
+
+        //console.log("Inject Pool (Randomized):");
+        //console.log(randins);
+
+          //set init
+        document.getElementById("injectbox").innerHTML = randins.slice(0,1);
+        document.getElementById("injectbox").innerHTML += "<button id='clearcon' onclick='clearcondition()'> Clear Starting Condition </button>";
+        console.log("Chosen Inject:");
+        console.log(randins.slice(0,1));
+        randins.shift();
+
+        shuffle(randins);
+        console.log("Remaining Pool:");
+        console.log(randins);
+
+
+}
+
+function clearcondition() {
+document.getElementById("injectbox").innerHTML = "<button onClick=\"randcondition()\">Random Condition</button> <button onClick=\"customtoggle();boxtoggle('start');buildinjmenu()\">Custom Condition</button>";
+randins = Object.assign([], ins);
+console.log(randins.length);
 }
 
 function clear_addon() {
@@ -294,6 +313,8 @@ $(document).ready(function() {
     }
 });
 
+//DEBUG CARD POOL:
+/*
 console.log(proc);
 console.log(ins);
 console.log(init);
@@ -302,7 +323,7 @@ console.log(c2);
 console.log(pivot);
 //CONSULTANTS
 console.log(con);
-
+*/
 
 
 //INITIAL STATE

@@ -1,3 +1,7 @@
+// VERSION*/
+// B&B - Engine.UB.1.1
+//
+
 //TOGGLE FUNCTIONS
 remprocs = Object.assign([], proc);
 function customtoggle() {
@@ -189,6 +193,7 @@ function chooseinj(id,contents) {
     //console.log(swap);
 
     document.getElementById("injectbox").innerHTML = swap;
+    document.getElementById("injectbox").innerHTML += "<button id='clearcon' onclick='clearcondition()'> Clear Starting Condition </button>";
 
     console.clear();
     randins = Object.assign([], ins);
