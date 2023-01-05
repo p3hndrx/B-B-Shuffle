@@ -51,6 +51,7 @@ background-position: center;
   margin-top: 20px;
   margin: 0 auto;
   width:80%;
+  max-height:165px;
   border-radius: 16px;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
   cursor: pointer;
@@ -100,6 +101,7 @@ transition: transform 0.6s;
 }
 #addonscenario .cards__front {
   height:auto;
+  max-height:165px;
   transform: rotateX(0deg);
   -webkit-transform: rotateX(0deg);
 }
@@ -139,6 +141,10 @@ transition: transform 0.6s;
 .addons
 {
   width:290px;
+}
+
+#dm_addonsolution {
+clear:both;
 }
 
 #dm_addonsolution img {

@@ -85,6 +85,58 @@ function rem_con() {
               document.getElementById("f").innerHTML = "<img style='width:200px;'' src='img/bb-back-consultant.png'>";
         }
 
+IC = 0
+PE = 0
+CE = 0
+PER = 0
+
+        //EXPANSION SCENARIO ADD-ONS SCRIPTS
+        function addIC() {
+            IC++
+              document.getElementById("addIC").innerHTML += "<div class=\"cards__single_"+IC+"\"><div class=\"cards__front\"><img src=\"img/bb-back-init.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"w"+IC+"\">"+init.slice(IC,IC+1);+"</div></div></div>"
+              document.getElementById("w"+IC).innerHTML = init.slice(IC,IC+1);
+              if (IC == 2) {
+              buttIC.style.display = "none";
+             }
+              document.getElementById("solIC").innerHTML += init.slice(IC,IC+1);
+               const addoncards = document.querySelectorAll('[class^="cards__single_"]');
+              addoncards.forEach((addon) => addon.addEventListener("click", flipCard));
+
+        }
+        function addPE() {
+            PE++
+              document.getElementById("addPE").innerHTML += "<div class=\"cards__single_"+PE+"\"><div class=\"cards__front\"><img src=\"img/bb-back-pivot.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"x"+PE+"\">"+pivot.slice(PE,PE+1);+"</div></div></div>"
+              document.getElementById("x"+PE).innerHTML = pivot.slice(PE,PE+1);
+              if (PE == 2) {
+              buttPE.style.display = "none";
+             }
+              document.getElementById("solPE").innerHTML += pivot.slice(PE,PE+1);
+              const addoncards = document.querySelectorAll('[class^="cards__single_"]');
+              addoncards.forEach((addon) => addon.addEventListener("click", flipCard));
+        }
+        function addCE() {
+            CE++
+              document.getElementById("addCE").innerHTML += "<div class=\"cards__single_"+CE+"\"><div class=\"cards__front\"><img src=\"img/bb-back-c2.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"y"+CE+"\">"+c2.slice(CE,CE+1);+"</div></div></div>"
+              document.getElementById("y"+CE).innerHTML = c2.slice(CE,CE+1);
+              if (CE == 2) {
+              buttCE.style.display = "none";
+             }
+              document.getElementById("solCE").innerHTML += c2.slice(CE,CE+1);
+              const addoncards = document.querySelectorAll('[class^="cards__single_"]');
+              addoncards.forEach((addon) => addon.addEventListener("click", flipCard));
+        }
+        function addPER() {
+            PER++
+              document.getElementById("addPER").innerHTML += "<div class=\"cards__single_"+PER+"\"><div class=\"cards__front\"><img src=\"img/bb-back-persist.png\"></div><div class=\"cards__back\"><div class=\"init\" id=\"z"+PER+"\">"+persist.slice(PER,PER+1);+"</div></div></div>"
+              document.getElementById("z"+PER).innerHTML = persist.slice(PER,PER+1);
+              if (PER == 2) {
+              buttPER.style.display = "none";
+             }
+              document.getElementById("solPER").innerHTML += persist.slice(PER,PER+1);
+              const addoncards = document.querySelectorAll('[class^="cards__single_"]');
+              addoncards.forEach((addon) => addon.addEventListener("click", flipCard));
+        }
+
 //PREPARE DECK
 
 var cardlist = 'carddb.json'
