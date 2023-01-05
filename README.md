@@ -32,7 +32,7 @@ When you reload the page, you will get:
 There will be a dice box at the bottom, an Inject card dealer, and 3x stacked tokens for marking.
 As the DM, you will get the solution to the Scenario (popup at bottom right).
 
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/Screenshots/dashboard.png" width="900px"
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/dashboard.png" width="900px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
@@ -40,35 +40,35 @@ As the DM, you will get the solution to the Scenario (popup at bottom right).
 - Once you click the scenario card to reveal, you cannot flip it back.
 - To facilitate narration and pre-staging the game, the DM can choose to reveal the solution:
 
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/Screenshots/dm-only.png" width="700px"
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/dm-only.png" width="700px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
 - There are 2 buttons for rolling Established Procedures and Other Procedures (respectively)
   - The totals and success/failure of the Dice Roll is calculated in the Game Progress box
 
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/Screenshots/roll.png" width="500px"
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/roll.png" width="500px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
 - Click DRAW INJECT to draw an inject card, CLEAR is self-explanatory
 
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/Screenshots/inject2.png" width="250px"
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/inject2.png" width="250px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/Screenshots/inject1.png" width="250px"
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/inject1.png" width="250px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
 - All cards activate the lightbox.
 
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/Screenshots/card-display.png" width="500px"
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/card-display.png" width="500px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
 - Chips can be dragged onto procedure cards to denote they are deactivated for x # of turns
 
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/Screenshots/chips.png" width="500px"
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/chips.png" width="500px"
      alt="Dashboard"
      style="float: left; margin-right: 10px;" />
 
@@ -84,6 +84,6 @@ As the DM, you will get the solution to the Scenario (popup at bottom right).
 - [Google Fonts](https://fonts.google.com/)
 - And of course, the great folks over at [Black Hills InfoSec](https://www.blackhillsinfosec.com/) for the art assets.
 
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/App/img/blackhills-logo.png" width="200px"
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/App/img/blackhills-logo.png" width="200px"
      alt="Black Hills InfoSec"
      style="float: left; margin-right: 10px;" />
