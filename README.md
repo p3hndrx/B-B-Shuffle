@@ -1,5 +1,5 @@
 
-<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/App/img/bb-logo.png" width="500px"
+<img src="https://github.com/p3hndrx/B-B-Shuffle/tree/Engine-V1/App/img/bb-logo.png?raw=true" width="500px"
      alt="BackDoors & Breaches"
      style="float: left; margin-right: 10px;" />
 
