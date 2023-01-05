@@ -3,8 +3,10 @@
      alt="BackDoors & Breaches"
      style="float: left; margin-right: 10px;" />
 
+# Engine-V1-Expansion
 Please note---
 this version (Engine-V1) comes preloaded with the ICS/OT carddb.json file.
+- Added CONSULTANT & ADD-ON SCENARIO OPTIONS for cards that call for it... e.g. Call A Consultant, Our Friend "Hacky", etc.
 
 # ICS/OT - VERSION 1.12
 - Added URI attributes for [CardDB JSON](App/carddb.json)
