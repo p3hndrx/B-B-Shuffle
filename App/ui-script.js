@@ -1,3 +1,7 @@
+// VERSION*/
+// B&B - Engine.US.1.0
+//
+
  // Make the DIV element draggable:
 dragElement(document.getElementById("injectdiv"));
 dragElement(document.getElementById("initinject"));

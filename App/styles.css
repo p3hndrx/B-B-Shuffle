@@ -47,6 +47,8 @@ border-radius: 16px;
 max-width:250px;
 }
 
+#dm_scenario { clear:both;}
+
 .solution {max-width:250px;float:left;}
 
 .title {
@@ -334,8 +336,8 @@ overflow: hidden;
 }
 
 .initinject {
-height:400px;
-overflow: hidden;
+/*height:400px;
+overflow: hidden; */
 }
 
 #injectbox .inject img {

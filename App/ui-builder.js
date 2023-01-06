@@ -1,3 +1,7 @@
+// VERSION*/
+// B&B - Engine.UB.1.0
+//
+
 //TOGGLE FUNCTIONS
 remprocs = Object.assign([], proc);
 function customtoggle() {
@@ -108,6 +112,8 @@ function buildinjmenu(){
     };
 }
 
+custom = [0,0,0,0]
+
 function choose(id,contents) {
     console.log(id);
 
@@ -116,27 +122,55 @@ function choose(id,contents) {
     swap = card.replace("scenimgbuild", "scenimg");
     swap = swap.replace("return false;","")
     swap = swap.replace("data","data-lightbox")
-    console.log(swap);
+    //console.log(swap);
 
     if (id.includes("ic")) {
         document.getElementById("a").innerHTML = swap;
         document.getElementById("dma").innerHTML = swap;
         //boxtoggle('ic');
+        idx=id.replace("ic_","")
+        reminit=init.slice();
+        reminit.splice(idx, 1);
+        custom.splice(0,1,id)
+
+        //clear-add-on
+        clear_ic();
     }
     if (id.includes("pv")) {
         document.getElementById("b").innerHTML = swap;
         document.getElementById("dmb").innerHTML = swap;
         //boxtoggle('pv');
+        idx=id.replace("pv_","")
+        rempivot=pivot.slice();
+        rempivot.splice(idx, 1);
+        custom.splice(1,1,id)
+
+        //clear-add-on
+        clear_pe();
     }
     if (id.includes("c2")) {
         document.getElementById("c").innerHTML = swap;
         document.getElementById("dmc").innerHTML = swap;
         //boxtoggle('c2');
+        idx=id.replace("c2_","")
+        remc2=c2.slice();
+        remc2.splice(idx, 1);
+        custom.splice(2,1,id)
+
+        //clear-add-on
+        clear_ce();
     }
     if (id.includes("ps")) {
         document.getElementById("d").innerHTML = swap;
         document.getElementById("dmd").innerHTML = swap;
         //boxtoggle('ps');
+        idx=id.replace("ps_","")
+        rempersist=persist.slice();
+        rempersist.splice(idx, 1);
+        custom.splice(3,1,id)
+
+        //clear-add-on
+       clear_per();
     }
 return false;
 }
@@ -152,6 +186,7 @@ function chooseinj(id,contents) {
     //console.log(swap);
 
     document.getElementById("injectbox").innerHTML = swap;
+    document.getElementById("injectbox").innerHTML += "<button id='clearcon' onclick='clearcondition()'> Clear Starting Condition </button>";
 
     console.clear();
     randins = Object.assign([], ins);
