@@ -133,8 +133,7 @@ function choose(id,contents) {
         reminit.splice(idx, 1);
         custom.splice(0,1,id)
 
-        //clear-add-on
-        clear_ic();
+
     }
     if (id.includes("pv")) {
         document.getElementById("b").innerHTML = swap;
@@ -145,8 +144,7 @@ function choose(id,contents) {
         rempivot.splice(idx, 1);
         custom.splice(1,1,id)
 
-        //clear-add-on
-        clear_pe();
+
     }
     if (id.includes("c2")) {
         document.getElementById("c").innerHTML = swap;
@@ -157,8 +155,7 @@ function choose(id,contents) {
         remc2.splice(idx, 1);
         custom.splice(2,1,id)
 
-        //clear-add-on
-        clear_ce();
+
     }
     if (id.includes("ps")) {
         document.getElementById("d").innerHTML = swap;
@@ -169,8 +166,7 @@ function choose(id,contents) {
         rempersist.splice(idx, 1);
         custom.splice(3,1,id)
 
-        //clear-add-on
-       clear_per();
+
     }
 return false;
 }

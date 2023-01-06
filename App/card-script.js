@@ -83,8 +83,7 @@ function rem_ins() {
               document.getElementById("e").innerHTML = "<img style='width:200px;'' src='img/CARD_BACK_2.0_DRAGOS_GREY.png'>";
         }
 
-
-var cardlist = 'carddb.json'
+var cardlist;
 
 var proc = []
 var init = []
@@ -96,6 +95,9 @@ var ins = []
 
 
 $(document).ready(function() {
+
+// Determine Deck Selection
+loaddeck();
 
 //GetVersion
   $.getJSON(cardlist, function(h) {
@@ -184,10 +186,5 @@ console.log(pivot);
 */
 
 
-//INITIAL STATE
-document.getElementById("a").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_RED.png'>"
-document.getElementById("b").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_YELLOW.png'>"
-document.getElementById("c").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_BROWN.png'>"
-document.getElementById("d").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_PURPLE.png'>"
 
 
