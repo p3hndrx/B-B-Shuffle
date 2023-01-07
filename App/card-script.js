@@ -110,8 +110,10 @@ function update_ins() {
         }
 
 function rem_ins() {
-              document.getElementById("e").innerHTML = "<img style='width:200px;'' src='img/CARD_BACK_2.0_DRAGOS_GREY.png'>";
-        }
+        $.getJSON(cardlist, function(h) {
+        $(e).html("<img style='width:200px;' src='"+h.grey+"'>")
+        });
+    }
 
 //CONSULTANTS
 
@@ -211,7 +213,7 @@ PER = 0
 
 //PREPARE DECK
 
-var cardlist = 'carddb.json'
+var cardlist;
 
 var proc = []
 var init = []
@@ -225,6 +227,9 @@ var con = []
 
 
 $(document).ready(function() {
+
+// Determine Deck Selection
+loaddeck();
 
 //GetVersion
   $.getJSON(cardlist, function(h) {
@@ -326,10 +331,5 @@ console.log(con);
 */
 
 
-//INITIAL STATE
-document.getElementById("a").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_RED.png'>"
-document.getElementById("b").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_YELLOW.png'>"
-document.getElementById("c").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_BROWN.png'>"
-document.getElementById("d").innerHTML = "<img class='full' src='img/CARD_BACK_2.0_DRAGOS_PURPLE.png'>"
 
 

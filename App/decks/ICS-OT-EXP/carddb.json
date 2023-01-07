@@ -1,0 +1,606 @@
+{
+  "title": "ICS-OT-V1+ExpansionV1.1",
+  "revdate": "01-06-2023",
+  "link": "https://www.dragos.com/",
+  "data": [
+    {
+      "name": "Vendor Portal",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_1.png",
+      "type": "initial",
+      "id": "001",
+      "details": "<a target=\"_blank\" href=\"https://www.dragos.com/blog/industry-news/preventing-initial-access-in-industrial-environments/\">https://www.dragos.com/blog/industry-news/preventing-initial-access-in-industrial-environments/</a>"
+    },
+    {
+      "name": "Dual-Homed Device",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_2.png",
+      "type": "initial",
+      "id": "002",
+      "details": "<a target=\"_blank\" href=\"https://github.com/galkan/crowbar\">https://github.com/galkan/crowbar</a>"
+    },
+    {
+      "name": "Infected Authorized Vendor Laptop",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_3.png",
+      "type": "initial",
+      "id": "003",
+      "details": "<a target=\"_blank\" href=\"https://www.reuters.com/article/us-nuclearpower-cyber-germany-idUSKCN0XN2OS\">https://www.reuters.com/article/us-nuclearpower-cyber-germany-idUSKCN0XN2OS</a>"
+    },
+    {
+      "name": "Data Historian Compromise",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_4.png",
+      "type": "initial",
+      "id": "004"
+    },
+    {
+      "name": "IT Compromised With Shared Domain Trust",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_5.png",
+      "type": "initial",
+      "id": "005",
+      "details": "<li><a target=\"_blank\" href=\"https://news.microsoft.com/transform/hackers-hit-norsk-hydro-ransomware-company-responded-transparency\">https://news.microsoft.com/transform/hackers-hit-norsk-hydro-ransomware-company-responded-transparency</a></li><li><a target=\"_blank\" href=\"https://github.com/BloodHoundAD/BloodHound\">https://github.com/BloodHoundAD/BloodHound</a></li>"
+    },
+    {
+      "name": "Dirty USB",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_6.png",
+      "type": "initial",
+      "id": "006",
+      "details": "<a target=\"_blank\" href=\"https://www.dragos.com/blog/industry-news/asset-visibility-maps-relationships-and-communication-pathways-in-ot-environments\">https://www.dragos.com/blog/industry-news/asset-visibility-maps-relationships-and-communication-pathways-in-ot-environments</a>"
+    },
+    {
+      "name": "Exploitable API",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_7.png",
+      "type": "initial",
+      "id": "007",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/byt3bl33d3r/SprayingToolkit\">https://github.com/byt3bl33d3r/SprayingToolkit</a></li><li><a target=\"_blank\" href=\"https://github.com/dxa4481/truffleHog\">https://github.com/dxa4481/truffleHog</a></li>"
+    },
+    {
+      "name": "Insider Threat",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_8.png",
+      "type": "initial",
+      "id": "008"
+    },
+    {
+      "name": "Malicious Project Files",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_9.png",
+      "type": "pivot",
+      "id": "009"
+    },
+    {
+      "name": "EWS Issues Rogue Commands",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_10.png",
+      "type": "pivot",
+      "id": "010"
+    },
+    {
+      "name": "Modifying Read/Write Scripts",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_11.png",
+      "type": "pivot",
+      "id": "011"
+    },
+    {
+      "name": "Internal Password Spray",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_12.png",
+      "type": "pivot",
+      "id": "012",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/dafthack/DomainPasswordSpray\">https://github.com/dafthack/DomainPasswordSpray</a></li><li><a target=\"_blank\" href=\"https://github.com/ropnop/kerbrute\">https://github.com/ropnop/kerbrute</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/webcast-attack-tactics-5-zero-to-hero-attack\">https://www.blackhillsinfosec.com/webcast-attack-tactics-5-zero-to-hero-attack</a></li>"
+    },
+    {
+      "name": "Broadcast/Multicast Protocol Poisoning",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_13.png",
+      "type": "pivot",
+      "id": "013",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/fox-it/mitm6\">https://github.com/fox-it/mitm6</a></li><li><a target=\"_blank\" href=\"https://github.com/lgandx/Responder\">https://github.com/lgandx/Responder</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to\">https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to</a></li>"
+    },
+    {
+      "name": "New Service Creation/Modification",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_14.png",
+      "type": "pivot",
+      "id": "014",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/SecureAuthCorp/impacket\">https://github.com/SecureAuthCorp/impacket</a></li><li><a target=\"_blank\" href=\"https://www.metasploit.com\">https://metasploit.com</a></li>"
+    },
+    {
+      "name": "Local Privilege Escalation",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_15.png",
+      "type": "pivot",
+      "id": "015",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/slyd0g/DLLHijackTest\">https://github.com/slyd0g/DLLHijackTest</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av\">https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av</a></li>"
+    },
+    {
+      "name": "GPO Push of Scheduled Tasks",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_16.png",
+      "type": "pivot",
+      "id": "016"
+    },
+    {
+      "name": "Stolen Engineering Workstation (EWS) Account",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_17.png",
+      "type": "persist",
+      "id": "017"
+    },
+    {
+      "name": "Malicious Logon Scripts",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_18.png",
+      "type": "persist",
+      "id": "018"
+    },
+    {
+      "name": "GPO Modification",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_19.png",
+      "type": "persist",
+      "id": "019"
+    },
+    {
+      "name": "Malicious Report Macros",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_20.png",
+      "type": "persist",
+      "id": "020"
+    },
+    {
+      "name": "HMI Graphics Manipulation",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_21.png",
+      "type": "persist",
+      "id": "021"
+    },
+    {
+      "name": "Malicious Firmware",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_22.png",
+      "type": "persist",
+      "id": "022",
+      "details": "OH MY! <a href=\"https://google.com\">https://google.com</a>"
+    },
+    {
+      "name": "Autorun Malware",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_23.png",
+      "type": "persist",
+      "id": "023"
+    },
+    {
+      "name": "New User Added",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_24.png",
+      "type": "persist",
+      "id": "024",
+      "details": "<li><a target=\"_blank\" href=\"https://www.metasploit.com\">https://www.metasploit.com</a></li><li><a target=\"_blank\" href=\"https://www.cobaltstrike.com\">https://www.cobaltstrike.com</a></li>"
+    },
+    {
+      "name": "Accessibility Features",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_25.png",
+      "type": "persist",
+      "id": "025",
+      "details": "<a target=\"_blank\" href=\"https://shop.hak5.org\">https://shop.hak5.org</a>"
+    },
+    {
+      "name": "Screenshot Exfil",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_26.png",
+      "type": "c2",
+      "id": "026"
+    },
+    {
+      "name": "Bridged System",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_27.png",
+      "type": "c2",
+      "id": "027"
+    },
+    {
+      "name": "Exfiltration Over Physical Medium",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_28.png",
+      "type": "c2",
+      "id": "028",
+      "details": "Exfiltration over physical medium.."
+    },
+    {
+      "name": "HTTP as Exfil",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_29.png",
+      "type": "c2",
+      "id": "029",
+      "details": "<a target=\"_blank\" href=\"https://www.thec2matrix.com\">https://www.thec2matrix.com</a>"
+    },
+    {
+      "name": "TCP Handshakes as Morse Code",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_30.png",
+      "type": "c2",
+      "id": "030"
+    },
+    {
+      "name": "DNS as C2",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_31.png",
+      "type": "c2",
+      "id": "031",
+      "details": "<a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/bypassing-cylance-part-2-using-dnscat2\">https://www.blackhillsinfosec.com/bypassing-cylance-part-2-using-dnscat2</a>"
+    },
+    {
+      "name": "Sequence of Events (SOE) Analysis",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_32.png",
+      "type": "procedure",
+      "id": "032"
+    },
+    {
+      "name": "Protocol Analysis",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_33.png",
+      "type": "procedure",
+      "id": "033"
+    },
+    {
+      "name": "Crisis Management",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_34.png",
+      "type": "procedure",
+      "id": "034"
+    },
+    {
+      "name": "Site Walkthrough",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_35.png",
+      "type": "procedure",
+      "id": "035"
+    },
+    {
+      "name": "Shodan Review",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_36.png",
+      "type": "procedure",
+      "id": "036"
+    },
+    {
+      "name": "Security Information and Event Management (SIEM) Log Analysis",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_37.png",
+      "type": "procedure",
+      "id": "037",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/philhagen/sof-elk\">https://github.com/philhagen/sof-elk</a></li><li><a target=\"_blank\" href=\"https://jpcertcc.github.io/ToolAnalysisResultSheet\">https://jpcertcc.github.io/ToolAnalysisResultSheet</a></li>"
+    },
+    {
+      "name": "Firewall Log Review",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_38.png",
+      "type": "procedure",
+      "id": "038",
+      "details": "<a target=\"_blank\" href=\"https://github.com/philhagen/sof-elk\">https://github.com/philhagen/sof-elk</a>"
+    },
+    {
+      "name": "Consequence-Driven Threat Hunting",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_39.png",
+      "type": "procedure",
+      "id": "039",
+      "details": "<li><a target=\"_blank\" href=\"https://www.activecountermeasures.com/free-tools\">https://www.activecountermeasures.com/free-tools</a></li><li><a target=\"_blank\" href=\"https://securityonionsolutions.com/\">https://securityonionsolutions.com/</a></li>"
+    },
+    {
+      "name": "Employee Interviews",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_40.png",
+      "type": "procedure",
+      "id": "040"
+    },
+    {
+      "name": "User and Entity Behavior Analytics (UEBA)",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_41.png",
+      "type": "procedure",
+      "id": "041",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/JPCERTCC/LogonTracer\">https://github.com/JPCERTCC/LogonTracer</a></li><li><a target=\"_blank\" href=\"https://openuba.org\">https://openuba.org/</a></li>"
+    },
+    {
+      "name": "Endpoint Analysis",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_42.png",
+      "type": "procedure",
+      "id": "042",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/sans-blue-team/DeepBlueCLI\">https://github.com/sans-blue-team/DeepBlueCLI</a></li><li><a target=\"_blank\" href=\"https://www.velocidex.com\">https://www.velocidex.com</a></li><li><a target=\"_blank\" href=\"https://github.com/teamdfir/sift\">https://github.com/teamdfir/sift</a></li><li><a target=\"_blank\" href=\"https://github.com/keydet89/RegRipper3.0\">https://github.com/keydet89/RegRipper3.0</a></li>"
+    },
+    {
+      "name": "Memory Analysis",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_43.png",
+      "type": "procedure",
+      "id": "043",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/simsong/bulk_extractor\">https://github.com/simsong/bulk_extractor</a></li><li><a target=\"_blank\" href=\"https://volatilityfoundation.org\">https://volatilityfoundation.org</a></li><li><a target=\"_blank\" href=\"https://www.velocidex.com\">https://www.velocidex.com</a></li>"
+    },
+    {
+      "name": "Unexpected PLC State Change",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_44.png",
+      "type": "inject",
+      "id": "044"
+    },
+    {
+      "name": "Safety Instrumented System (SIS) Tampering",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_45.png",
+      "type": "inject",
+      "id": "045"
+    },
+    {
+      "name": "Mediation",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_46.png",
+      "type": "inject",
+      "id": "046"
+    },
+    {
+      "name": "You Can't Get There From Here",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_47.png",
+      "type": "inject",
+      "id": "047"
+    },
+    {
+      "name": "Emergency Facility Shutdown",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_48.png",
+      "type": "inject",
+      "id": "048"
+    },
+    {
+      "name": "Legacy Knowledge",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_49.png",
+      "type": "inject",
+      "id": "049"
+    },
+    {
+      "name": "No High Availability (HA) System",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_50.png",
+      "type": "inject",
+      "id": "050"
+    },
+    {
+      "name": "No Shirt, No Shoes",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_51.png",
+      "type": "inject",
+      "id": "051"
+    },
+    {
+      "name": "USB Worm",
+      "image": "decks/ICS-OT-EXP/BNB_CARDS_ICS_DRAGOS_52.png",
+      "type": "inject",
+      "id": "052"
+    },
+    {
+      "name": "Exfiltration Over Physical Medium",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CE-1.png",
+      "type": "c2",
+      "id": "e001",
+      "details": "<a target=\"_blank\" href=\"https://attack.mitre.org/techniques/T1052\"></a>"
+    },
+    {
+      "name": "Alethe Denis",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-1.png",
+      "type": "consultant",
+      "id": "e002",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/alethedenis\">@alethedenis</a>"
+    },
+    {
+      "name": "Tim Medin",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-2.png",
+      "type": "consultant",
+      "id": "e003",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/timmedin\">@timmedin</a>"
+    },
+    {
+      "name": "Jorge Orchilles",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-3.png",
+      "type": "consultant",
+      "id": "e004",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/jorgeorchilles\">@jorgeorchilles</a>"
+    },
+    {
+      "name": "Alissa Torres",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-4.png",
+      "type": "consultant",
+      "id": "e005",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/sibertor\">@sibertor</a>"
+    },
+    {
+      "name": "Dieter Smith",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-5.png",
+      "type": "consultant",
+      "id": "e006",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/itssmithereens\">@itssmithereens</a>"
+    },
+    {
+      "name": "Marcus J. Carey",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-6.png",
+      "type": "consultant",
+      "id": "e007",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/marcusjcarey\">@marcusjcarey</a>"
+    },
+    {
+      "name": "Robert M. Lee",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-7.png",
+      "type": "consultant",
+      "id": "e008",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/robertmlee\">@robertmlee</a>"
+    },
+    {
+      "name": "Chloe Messdaghi",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-8.png",
+      "type": "consultant",
+      "id": "e009",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/chloemessdaghi\">@chloemessdaghi</a>"
+    },
+    {
+      "name": "Eric Conrad",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-9.png",
+      "type": "consultant",
+      "id": "e010",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/eric_conrad\">@eric_conrad</a>"
+    },
+    {
+      "name": "Richard Phung",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-10.png",
+      "type": "consultant",
+      "id": "e011",
+      "details": "<a target=\"_blank\" href=\"https://twitter.com/bluephish\">@bluephish</a>"
+    },
+    {
+      "name": "Edward Miro",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_CON-11.png",
+      "type": "consultant",
+      "id": "e012"
+    },
+    {
+      "name": "Missing HTTP Strict Transport (HSTS) Protection",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_IC-1.png",
+      "type": "initial",
+      "id": "e013",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/droe/sslsplit\">https://github.com/droe/sslsplit</a></li><li><a target=\"_blank\" href=\"https://github.com/moxie0/sslstrip\">https://github.com/moxie0/sslstrip</a></li>"
+    },
+    {
+      "name": "Supply Chain Attack",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_IC-2.png",
+      "type": "initial",
+      "id": "e014",
+      "details": "<li><a target=\"_blank\" href=\"https://krebsonsecurity.com/2020/12/solarwinds-hack-could-affect-18k-customers\">https://krebsonsecurity.com/2020/12/solarwinds-hack-could-affect-18k-customers</a></li><li><a target=\"_blank\" href=\"https://www.wired.com/story/russia-solarwinds-hack-roundup\">https://www.wired.com/story/russia-solarwinds-hack-roundup</a></li>\n"
+    },
+    {
+      "name": "Physical Access",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_IC-3.png",
+      "type": "initial",
+      "id": "e015",
+      "details": "<a target=\"_blank\" href=\"https://youtu.be/mmcRTnTNC8\">https://youtu.be/mmcRTnTNC8</a>"
+    },
+    {
+      "name": "Food Poisoning",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-1.png",
+      "type": "inject",
+      "id": "e016",
+      "details": "Contributed by <a target=\"_blank\" href=\"https://twitter.com/dfirben\">@dfirben"
+    },
+    {
+      "name": "SIEM Goes Down",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-2.png",
+      "type": "inject",
+      "id": "e017",
+      "details": ""
+    },
+    {
+      "name": "This isn't the first time, and won't be the last",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-3.png",
+      "type": "inject",
+      "id": "e018",
+      "details": "Contributed by <a target=\"_blank\" href=\"https://twitter.com/simplenomad\">@simplenomad"
+    },
+    {
+      "name": "EDR Compromise",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-4.png",
+      "type": "inject",
+      "id": "e019",
+      "details": "Contributed by <a target=\"_blank\" href=\"https://twitter.com/fhlipZero\">@fhlipZero</a>"
+    },
+    {
+      "name": "Attackers Taunt You",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-5.png",
+      "type": "inject",
+      "id": "e020",
+      "details": "Contributed by <a target=\"_blank\" href=\"https://twitter.com/davehull\">@davehull</a>"
+    },
+    {
+      "name": "Attackers Timestomp Key Evidence Files",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-6.png",
+      "type": "inject",
+      "id": "e021",
+      "details": "Contributed by <a target=\"_blank\" href=\"https://twitter.com/davehull\">@davehull</a>"
+    },
+    {
+      "name": "No Good Deed Goes Unpunished",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-7.png",
+      "type": "inject",
+      "id": "e022",
+      "details": ""
+    },
+    {
+      "name": "Our Friend 'hacky'",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-8.png",
+      "type": "inject",
+      "id": "e023",
+      "details": ""
+    },
+    {
+      "name": "Is it getting hot in here?",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-9.png",
+      "type": "inject",
+      "id": "e024",
+      "details": "Contributed by <a target=\"_blank\" href=\"https://twitter.com/hacks4pancakes\">@hacks4pancakes</a>"
+    },
+    {
+      "name": "'Don't Forget to smash the subscribe button!'",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_INJ-10.png",
+      "type": "inject",
+      "id": "e025",
+      "details": "Contributed by <a target=\"_blank\" href=\"https://twitter.com/fixtheexchange\">@FixTheExchange</a>"
+    },
+    {
+      "name": "SMB Weakness",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PE-1.png",
+      "type": "pivot",
+      "id": "e026",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/Kevin-Robertson/Inveigh\">https://github.com/Kevin-Robertson/Inveigh</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/an-smb-relay-race-how-to-exploit-llmnr-and-smb-message-signing-for-fun-and-profit\">https://www.blackhillsinfosec.com/an-smb-relay-race-how-to-exploit-llmnr-and-smb-message-signing-for-fun-and-profit</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/webcast-group-policies-that-kill-kill-chains\">https://www.blackhillsinfosec.com/webcast-group-policies-that-kill-kill-chains</a></li>"
+    },
+    {
+      "name": "Internal Spearphishing",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PE-2.png",
+      "type": "pivot",
+      "id": "e027",
+      "details": "<a target=\"_blank\" href=\"https://attack.mitre.org/techniques/T1534\">https://attack.mitre.org/techniques/T1534</a>"
+    },
+    {
+      "name": "Access Token Manipulation",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PE-3.png",
+      "type": "pivot",
+      "id": "e028",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/Exploit-install/PowerSploit\">https://github.com/Exploit-install/PowerSploit</a></li><li><a target=\"_blank\" href=\"https://attack.mitre.org/techniques/T1134\">https://attack.mitre.org/techniques/T1134</a></li><li><a target=\"_blank\" href=\"https://pentestlab.blog/2017/04/03/token-manipulation\">https://pentestlab.blog/2017/04/03/token-manipulation</a></li>"
+    },
+    {
+      "name": "Stale Network Address Configurations (SNAC) Attack",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PE-4.png",
+      "type": "pivot",
+      "id": "e029",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/arch4ngel/eavesarp\">https://github.com/arch4ngel/eavesarp</a></li><li><a target=\"_blank\" href=\"https://www.blackhillsinfosec.com/analyzing-arp-to-discover-exploit-stale-network-address-configurations\">https://www.blackhillsinfosec.com/analyzing-arp-to-discover-exploit-stale-network-address-configurations</a></li>"
+    },
+    {
+      "name": "Cleartext Passwords in Files",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PE-5.png",
+      "type": "pivot",
+      "id": "e030",
+      "details": "<li><a target=\"_blank\" href=\"https://github.com/SnaffCon/Snaffler\">https://github.com/SnaffCon/Snaffler</a></li><li><a target=\"_blank\" href=\"https://blackhillsinfosec.com/power-posing-powerops\">https://blackhillsinfosec.com/power-posing-powerops</a></li>"
+    },
+    {
+      "name": "Event Triggered Malware",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PER-1.png",
+      "type": "persist",
+      "id": "e031",
+      "details": "<li><a target=\"_blank\" href=\"https://attack.mitre.org/techniques/T1546/014\">https://attack.mitre.org/techniques/T1546/014</a></li><li><a target=\"_blank\" href=\"https://youtu.be/XFk-b0aT6cs\">https://youtu.be/XFk-b0aT6cs</a></li>"
+    },
+    {
+      "name": "Malware Injection Into Client Software",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PER-2.png",
+      "type": "persist",
+      "id": "e032",
+      "details": "<li><a target=\"_blank\" href=\"https://www.welivesecurity.com/2014/02/21/an-in-depth-analysis-of-linuxebury\">https://www.welivesecurity.com/2014/02/21/an-in-depth-analysis-of-linuxebury</a></li><li><a target=\"_blank\" href=\"https://attack.mitre.org/techniques/T1554\">https://attack.mitre.org/techniques/T1554</a></li>"
+    },
+    {
+      "name": "Malicious Email Rules",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PER-3.png",
+      "type": "persist",
+      "id": "e033",
+      "details": "<li><a target=\"_blank\" href=\"https://attack.mitre.org/techniques/T1137\">https://attack.mitre.org/techniques/T1137</a></li><li><a target=\"_blank\" href=\"https://youtu.be/XFk-b0aT6cs\">https://youtu.be/XFk-b0aT6cs</a></li>"
+    },
+    {
+      "name": "Windows Service Recovery Actions",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PER-4.png",
+      "type": "persist",
+      "id": "e034",
+      "details": "<a target=\"_blank\" href=\"https://kb.infobridge.com/hc/en-us/articles/207123929-Setting-Windows-Service-Recovery-options\">https://kb.infobridge.com/hc/en-us/articles/207123929-Setting-Windows-Service-Recovery-options</a><br>Contributed by <a target=\"_blank\" href=\"https://twitter.com/davehull\">@davehull</a></li>"
+    },
+    {
+      "name": "Registry Keys for Persistence",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PER-5.png",
+      "type": "persist",
+      "id": "e035",
+      "details": "<a target=\"_blank\" href=\"https://attack.mitre.org/techniques/T1112\">https://attack.mitre.org/techniques/T1112</a>"
+    },
+    {
+      "name": "Call a Consultant",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PRO-1.png",
+      "type": "procedure",
+      "id": "e036",
+      "details": ""
+    },
+    {
+      "name": "Physical Security Review",
+      "image": "decks/EXPv1.1/BNB_CARDS_EXP1.1_PRO-2.png",
+      "type": "procedure",
+      "id": "e037",
+      "details": ""
+    }
+  ],
+  "red":    "decks/ICS-OT-EXP/CARD_BACK_2.0_DRAGOS_RED.png",
+  "yellow": "decks/ICS-OT-EXP/CARD_BACK_2.0_DRAGOS_YELLOW.png",
+  "brown":  "decks/ICS-OT-EXP/CARD_BACK_2.0_DRAGOS_BROWN.png",
+  "purple": "decks/ICS-OT-EXP/CARD_BACK_2.0_DRAGOS_PURPLE.png",
+  "grey":   "decks/ICS-OT-EXP/CARD_BACK_2.0_DRAGOS_GREY.png",
+  "green":  "decks/ICS-OT-EXP/CARD_BACK_2.0_DRAGOS_GREEN.png",
+  "logo":   "decks/ICS-OT-EXP/dragos-logo.png"
+}

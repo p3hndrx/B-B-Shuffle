@@ -1,8 +1,9 @@
 <head>
-<title>B&B Shuffle | Engine-V1-Expansion</title>
+<title>B&B Shuffle | Engine-V1.01-Expansion</title>
 <link rel="stylesheet" href="styles.css" >
 <link rel="stylesheet" href="expstyles.css" >
 <link rel="stylesheet" href="builder-styles.css" >
+<link rel="stylesheet" href="deck-styles.css" >
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -10,9 +11,23 @@
 
   </head>
 <div id="viewrec">
- B&B Shuffle - Engine-V1-Expansion <div id="version">Card list: </div><div id="date">Rev Date: </div><br>
+ B&B Shuffle - Engine-V1.01-Expansion <div id="version">Card list: </div><div id="date">Rev Date: </div>
+    <button id="deckselectoropen" class="open-button" onclick="opendeckselector()">Choose Deck</button>
+</div>
+<div class="form-popup" id="myForm">
+        <form class="form-container" onsubmit="updatedeck(deck.value);">
+            Available Decks: <br>
+            <input type="radio" id="corev21EXP" name="deck" value="CoreV21EXP" ><label for="corev21EXP">CoreV2.1+Expansion</label><br>
+            <input type="radio" id="icsotV1EXP" name="deck" value="ICSOTEXP" ><label for="icsotV1EXP">ICS/OTv1+Expansion</label><br>
+            <br>
+        <button type="submit" class="btn" >Submit</button>
+        <button type="button" class="btn cancel" onclick="closedeckselector()">Close Deck Selector</button>
+        </form>
+    </div>
+<!--recommendations-->
+<div id="viewrecright">
  Best viewed at 1920x1080
- <br> 
+ <br>
 </div>
 <div id="solution">
   DM Controls/Toggles:
@@ -78,8 +93,8 @@
       
 
       <div class="cards__single">
-        <div class="cards__front">
-          <img src="img/CARD_BACK_2.0_DRAGOS_RED.png">
+        <div id="inita" class="cards__front">
+
         </div>
         <div class="cards__back">
           <div class='init' id="a">
@@ -89,8 +104,8 @@
       </div>
 
       <div class="cards__single">
-        <div class="cards__front">
-          <img src="img/CARD_BACK_2.0_DRAGOS_YELLOW.png">
+        <div id="initb"  class="cards__front">
+
         </div>
         <div class="cards__back">
           <div class='init' id="b">
@@ -101,8 +116,8 @@
 
      
       <div class="cards__single">
-        <div class="cards__front">
-          <img src="img/CARD_BACK_2.0_DRAGOS_BROWN.png">
+        <div id="initc"  class="cards__front">
+
         </div>
         <div class="cards__back">
           <div class='init' id="c">
@@ -112,8 +127,8 @@
 
       
       <div class="cards__single">
-        <div class="cards__front">
-         <img src="img/CARD_BACK_2.0_DRAGOS_PURPLE.png">
+        <div id="initd"  class="cards__front">
+
         </div>
         <div class="cards__back">
           <div class='init' id="d">
@@ -172,7 +187,7 @@ Other Procedures:
     <input type="button" onclick="rem_ins()" value="CLEAR"/>
     <div >
         <div  id="e">
-            <img style="width:200px;" src="img/CARD_BACK_2.0_DRAGOS_GREY.png">
+
         </div>
     </div>
 </div>
@@ -188,7 +203,7 @@ Other Procedures:
     <input type="button" onclick="rem_con()" value="CLEAR"/>
     <div >
         <div  id="f">
-            <img style="width:200px;" src="img/bb-back-consultant.png">
+
         </div>
     </div>
 </div>
@@ -274,9 +289,6 @@ Other Procedures:
 
 <!-- ATTRIBUTION -->
  <div id="copyright">
-      <a href="https://www.blackhillsinfosec.com/projects/backdoorsandbreaches"><div id="bb"></div></a>
-      <a href="https://www.dragos.com/"><div id="dragos"></div></a>
-      <a href="https://www.blackhillsinfosec.com/"><div id="bh"></div></a>
 
  </div>
 
@@ -287,5 +299,6 @@ Other Procedures:
 <script type="text/javascript" src="dice-script.js"></script>
 <script type="text/javascript" src="ui-script.js"></script>
 <script type="text/javascript" src="ui-builder.js"></script>
+<script type="text/javascript" src="deck-script.js"></script>
 
    

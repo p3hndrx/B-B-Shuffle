@@ -5,8 +5,18 @@
 
 # Engine-V1-Expansion
 Please note---
-this version (Engine-V1) comes preloaded with the ICS/OT carddb.json file.
+this version (Engine-V1-Expansion) comes preloaded with the CoreV2+Expansion and the ICS/OTV1+Expansion carddb.json file(s).
+
+View [Card List](https://docs.google.com/spreadsheets/d/1RNBFr4o9OPYWwR7mxdadHQwxRayylZewcphdS3K6-og/edit?usp=sharing)
+
 - Added CONSULTANT & ADD-ON SCENARIO OPTIONS for cards that call for it... e.g. Call A Consultant, Our Friend "Hacky", etc.
+  - Consultant Draw Menu 
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1-Expansion/Screenshots/ConsultantDraw.png">
+  - AddOn Scenario Draw Menu
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1-Expansion/Screenshots/AddOnScenario.png">
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1-Expansion/Screenshots/AddonScenarioSolution.png">
+  - Deck Selector
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1-Expansion/Screenshots/DeckChooser.png">
 
 # ICS/OT - VERSION 1.12
 - Added URI attributes for [CardDB JSON](App/carddb.json)
