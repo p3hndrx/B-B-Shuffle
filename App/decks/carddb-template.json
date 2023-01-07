@@ -1,0 +1,21 @@
+{
+  "title": "DECK NAME",
+  "revdate": "08-01-2021",
+  "link": "",
+  "data": [
+    {
+      "name": "CARDNAME",
+      "image": "decks/DECKNAME/CARDFILE.png",
+      "type": "initial",
+      "id": "001",
+      "details": "<li><a target=\"_blank\" href=\"URL\"></a></li>"
+    }
+  ],
+  "red": "img/bb-back-init.png",
+  "yellow": "img/bb-back-pivot.png",
+  "brown": "img/bb-back-c2.png",
+  "purple": "img/bb-back-persist.png",
+  "grey":   "img/bb-back-inject.png",
+  "green":  "",
+  "logo":   ""
+}

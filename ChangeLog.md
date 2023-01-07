@@ -11,6 +11,7 @@ View [Card List](https://docs.google.com/spreadsheets/d/1RNBFr4o9OPYWwR7mxdadHQw
 
   - Added Deck Selector
 <img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/DeckChooser.png">
+  - Please also see: [HowTo-CustomDecks.md](HowTo-CustomDecks.md)
 
 # ICS/OT - VERSION 1.12
 - Added URI attributes for [CardDB JSON](App/carddb.json)
