@@ -3,8 +3,14 @@
      alt="BackDoors & Breaches"
      style="float: left; margin-right: 10px;" />
 
+# Engine-V1
 Please note---
-this version (Engine-V1) comes preloaded with the ICS/OT carddb.json file.
+this version (Engine-V1-Expansion) comes preloaded with CoreV1, CoreV2.1, and the ICS/OTV1 carddb.json file(s).
+
+View [Card List](https://docs.google.com/spreadsheets/d/1RNBFr4o9OPYWwR7mxdadHQwxRayylZewcphdS3K6-og/edit?usp=sharing)
+
+  - Added Deck Selector
+<img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/Screenshots/DeckChooser.png">
 
 # ICS/OT - VERSION 1.12
 - Added URI attributes for [CardDB JSON](App/carddb.json)
