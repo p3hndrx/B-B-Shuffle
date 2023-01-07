@@ -31,8 +31,8 @@ console.log(selecteddeck);
     if (selecteddeck == 'CoreV1'){
         cardlist = 'decks/CoreV1/carddb.json'
         }
-    if (selecteddeck == 'CoreV2'){
-        cardlist = 'decks/CoreV2/carddb.json'
+    if (selecteddeck == 'CoreV21'){
+        cardlist = 'decks/CoreV2.1/carddb.json'
         }
     if (selecteddeck == 'ICSOT'){
         cardlist = 'decks/ICS-OT/carddb.json'

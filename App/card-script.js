@@ -80,8 +80,10 @@ function update_ins() {
         }
 
 function rem_ins() {
-              document.getElementById("e").innerHTML = "<img style='width:200px;'' src='img/CARD_BACK_2.0_DRAGOS_GREY.png'>";
-        }
+        $.getJSON(cardlist, function(h) {
+        $(e).html("<img style='width:200px;' src='"+h.grey+"'>")
+        });
+    }
 
 var cardlist;
 
