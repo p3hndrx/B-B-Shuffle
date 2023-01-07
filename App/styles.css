@@ -40,7 +40,21 @@ background-color: #FFFFFF;
 border-radius: 16px;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
   padding:10px;
+width:200px;
+}
 
+#viewrecright{
+font-size:10px;
+z-index:99;
+position:absolute;
+top:0;
+right:0;
+background-color: #FFFFFF;
+border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  padding:10px;
+width:200px;
+}
 }
 
 #dm_solution img {
@@ -375,11 +389,10 @@ width:100%;
   height:70px;
 }
 
-#dragos
+.sponsor
 { 
   width:200px;
   background-size: contain;
-  background-image: url(img/dragos-logo.png);
   background-repeat: no-repeat;
   float:right;
   height:70px;
