@@ -231,28 +231,28 @@
       "image": "decks/CoreV1/BNB_CARDS_PRO-1.png",
       "type": "procedure",
       "id": "033",
-      "details": "<a target=\"_blank\" href=\"https://github.com/sans-blue-team/DeepBlueCLI\">https://github.com/sans-blue-team/DeepBlueCLI</a>"
+      "details": "<li><a target=\"_blank\" href=\"https://www.antisyphontraining.com/server-analysis/\">https://www.antisyphontraining.com/server-analysis/</a></li><li><a target=\"_blank\" href=\"https://github.com/sans-blue-team/DeepBlueCLI\">https://github.com/sans-blue-team/DeepBlueCLI</a></li>"
     },
     {
       "name": "Security Information and Event Management (SIEM) Log Analysis",
       "image": "decks/CoreV1/BNB_CARDS_PRO-2.png",
       "type": "procedure",
       "id": "034",
-      "details": "<li><a target=\"_blank\" href=\"https://github.com/philhagen/sof-elk\">https://github.com/philhagen/sof-elk</a></li><li><a target=\"_blank\" href=\"https://jpcertcc.github.io/ToolAnalysisResultSheet\">https://jpcertcc.github.io/ToolAnalysisResultSheet</a></li>"
+      "details": "<li><a target=\"_blank\" href=\"https://www.antisyphontraining.com/event-log-analysis/\">https://www.antisyphontraining.com/event-log-analysis/</a></li><li><a target=\"_blank\" href=\"https://github.com/philhagen/sof-elk\">https://github.com/philhagen/sof-elk</a></li><li><a target=\"_blank\" href=\"https://jpcertcc.github.io/ToolAnalysisResultSheet\">https://jpcertcc.github.io/ToolAnalysisResultSheet</a></li>"
     },
     {
       "name": "Firewall Log Review",
       "image": "decks/CoreV1/BNB_CARDS_PRO-3.png",
       "type": "procedure",
       "id": "035",
-      "details": "<a target=\"_blank\" href=\"https://github.com/philhagen/sof-elk\">https://github.com/philhagen/sof-elk</a>"
+      "details": "<li><a target=\"_blank\" href=\"https://www.antisyphontraining.com/firewall-log-analysis/\">https://www.antisyphontraining.com/firewall-log-analysis/</a></li><li><a target=\"_blank\" href=\"https://github.com/philhagen/sof-elk\">https://github.com/philhagen/sof-elk</a></li>"
     },
     {
       "name": "NetFlow,Zeek/Bro,Real Intelligence Threat Analytics (RITA) Analysis",
       "image": "decks/CoreV1/BNB_CARDS_PRO-4.png",
       "type": "procedure",
       "id": "036",
-      "details": "<li><a target=\"_blank\" href=\"https://www.activecountermeasures.com/free-tools/rita\">https://www.activecountermeasures.com/free-tools/rita</a></li><li><a target=\"_blank\" href=\"https://securityonion.net\">https://securityonion.net</a></li><li><a target=\"_blank\" href=\"https://www.activecountermeasures.com\">https://www.activecountermeasures.com</a></li>"
+      "details": "<li><a target=\"_blank\" href=\"https://www.antisyphontraining.com/network-threat-hunting/\">https://www.antisyphontraining.com/network-threat-hunting/</a></li><li><a target=\"_blank\" href=\"https://www.activecountermeasures.com/free-tools/rita\">https://www.activecountermeasures.com/free-tools/rita</a></li><li><a target=\"_blank\" href=\"https://securityonion.net\">https://securityonion.net</a></li><li><a target=\"_blank\" href=\"https://www.activecountermeasures.com\">https://www.activecountermeasures.com</a></li>"
     },
     {
       "name": "Internal Segmentation",
@@ -264,21 +264,22 @@
       "name": "Endpoint Security Protection Analysis",
       "image": "decks/CoreV1/BNB_CARDS_PRO-6.png",
       "type": "procedure",
-      "id": "038"
+      "id": "038",
+      "details": "<li><a target=\"_blank\" href=\"https://www.antisyphontraining.com/endpoint-protection-analysis/\">https://www.antisyphontraining.com/endpoint-protection-analysis/</a></li>"
     },
     {
       "name": "User and Entity Behavior Analytics (UEBA)",
       "image": "decks/CoreV1/BNB_CARDS_PRO-7.png",
       "type": "procedure",
       "id": "039",
-      "details": "<li><a target=\"_blank\" href=\"https://github.com/JPCERTCC/LogonTracer\">https://github.com/JPCERTCC/LogonTracer</a></li><li><a target=\"_blank\" href=\"https://openuba.org\">https://openuba.org/</a></li>"
+      "details": "<li><a target=\"_blank\" href=\"https://www.antisyphontraining.com/user-and-entity-behavior-analytics/\">https://www.antisyphontraining.com/user-and-entity-behavior-analytics/</a></li><li><a target=\"_blank\" href=\"https://github.com/JPCERTCC/LogonTracer\">https://github.com/JPCERTCC/LogonTracer</a></li><li><a target=\"_blank\" href=\"https://openuba.org\">https://openuba.org/</a></li>"
     },
     {
       "name": "Endpoint Analysis",
       "image": "decks/CoreV1/BNB_CARDS_PRO-8.png",
       "type": "procedure",
       "id": "040",
-      "details": "<a target=\"_blank\" href=\"https://github.com/sans-blue-team/DeepBlueCLI\">https://github.com/sans-blue-team/DeepBlueCLI</a>"
+      "details": "<li><a target=\"_blank\" href=\"https://www.antisyphontraining.com/endpoint-analysis/\">https://www.antisyphontraining.com/endpoint-analysis/</a></li><li><a target=\"_blank\" href=\"https://github.com/sans-blue-team/DeepBlueCLI\">https://github.com/sans-blue-team/DeepBlueCLI</a></li>"
     },
     {
       "name": "Isolation",
