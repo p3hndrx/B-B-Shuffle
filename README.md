@@ -87,3 +87,30 @@ As the DM, you will get the solution to the Scenario (popup at bottom right).
 <img src="https://raw.githubusercontent.com/p3hndrx/B-B-Shuffle/Engine-V1/App/img/blackhills-logo.png" width="200px"
      alt="Black Hills InfoSec"
      style="float: left; margin-right: 10px;" />
+
+
+## Docker Run Build  and Run Instructions
+Once you run the build command, you can run the Docker Image with the following command and navigate to the `host IP` address on port `8080`.
+
+```bash
+# Shell Command for building the Docker Image
+docker build -t b-b-shuffle .
+
+# Shell Command for running the Docker Image
+docker run -d --name b-b-shuffle --hostname b-b-shuffle -p 8080:80 b-b-shuffle
+```
+
+## Docker Compose Build and Run Instructions
+```yaml
+services:
+     b-b-shuffle:
+          build: .
+          container_name: b-b-shuffle
+          ports:
+               - "8080:80"
+          hostname: b-b-shuffle
+```
+```bash
+# Shell Command for start docker compose
+docker-compose up -d
+```

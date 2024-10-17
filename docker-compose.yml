@@ -1,0 +1,7 @@
+services:
+     b-b-shuffle:
+          build: .
+          container_name: b-b-shuffle
+          ports:
+               - "8080:80"
+          hostname: b-b-shuffle
